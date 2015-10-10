@@ -1,0 +1,85 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <img class="img-responsive pull-left farr-logo" src="../img/farr-logo-120x71.png"/>
+      </div>
+      <div class="col-lg-12">
+        <div class="col-lg-7">
+          <ul class="list-inline">
+            <li>
+              <a href="../index.php">Home</a>
+            </li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li>
+              <a href="../index.php#home-page-1">About</a>
+            </li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li>
+              <a href="properties.php">Properties</a>
+            </li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li>
+              <a href="application.php">Application</a>
+            </li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li>
+              <a href="https://lillypad.gocashbox.com/" target="_blank">Pay Online</a>
+            </li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li>
+              <a href="contact.php">Contact</a>
+            </li>
+            <li class="footer-menu-divider">&sdot;</li>
+
+          </ul>
+          <p class="copyright text-muted medium">Copyright &copy; The Lilly Pad West Palm Beach, All Rights Reserved</p>
+        </div>
+        <div class="col-lg-5">
+          <p class="pull-right kb-footer-text">
+            <img src="../img/kb-logo-v3-75x60.png" alt="KB Software Solutions Web Design">
+            <a href="http://www.kbsoftwaresolutions.com" target="_blank">Website Development by KB Software Solutions</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+  $(function(){   
+    $('.fadein img:gt(0)').hide();
+    setInterval(function(){
+      $('.fadein :first-child').fadeOut()
+      .next('img').fadeIn()
+      .end().appendTo('.fadein');}, 
+                5000);
+  });
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  }); 
+  $(document).ready(function(){
+    $('.dropdown').hover(function(){
+      $(this).find('ul').stop().slideToggle(300);
+    });
+  });
+</script>
+<script type="text/javascript">stLight.options({publisher: "f62e515e-8f42-4815-aec5-77d2c83198b5", doNotHash: false, doNotCopy: false, hashAddressBar: false});
+</script>
+<script>
+  var options={ "publisher": "f62e515e-8f42-4815-aec5-77d2c83198b5", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "linkedin", "email", "googleplus"]}};
+  var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
+</script>
