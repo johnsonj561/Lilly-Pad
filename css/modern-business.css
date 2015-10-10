@@ -1,93 +1,478 @@
-/*!
- * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
-/* Global Styles */
-
 html,
 body {
-    height: 100%;
+  height: 100%;
+  font-family: "europa", Muli,Helvetica,Arial,sans-serif;
+  color: #777;
+}
+p{
+  font-size: 20px;
+  color: #777;
+  font-family: "europa";
+}
+li{
+  font-size: 18px;
+  font-family: "europa", Muli,Helvetica,Arial,sans-serif;
+  color: #777;
+  color: #777;
+}
+.thumbnail{
+  border: none;
+}
+.image-description{
+  font-size: 17px;
+  font-stretch: expanded;
+}
+.thumbnail-title{
+  font-size: 24px;
+  font-family: "europa";
+  margin-bottom: 25px;
 }
 
+
+/* Page Spacing */
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  padding-top: 60px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+.photo-description{
+  padding-top: 15px;
+}
+.marketing{
+  margin-top: 500px;
+}
 .img-portfolio {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+}
+.img-hover:hover {
+  opacity: 0.8;
+}
+/* Home Page Information Frames */
+.home-page-1{
+  margin-top: 600px;
 }
 
-.img-hover:hover {
-    opacity: 0.8;
+/* Well */
+.well{
+  border: 2px solid #F6508F;
+  background-color:#F3F3F3;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 120px;
+  margin-bottom: 60px;
 }
+.well p{
+  font-size: 20px;
+}
+.well .btn-default{
+  margin-top: 5px;
+  border-color: #F6508F;
+}
+
+
+/* Buttons */
+.btn-default{
+  color: #090809;
+  background-color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  border-width: 2px;
+}
+.btn-default:hover{
+  color: #F6508F;
+  border-color: #F6508F;
+  ;
+}
+.to-top{
+  margin-top: 10px;
+}
+.to-top>a{
+  color: #F6508F;
+  text-decoration: none;
+}
+.to-top>a:hover{
+  color: #72FAFB;
+  text-decoration: none;
+}
+
+
+/* Borders */
+.pink-border{
+  border: 8px solid #F6508F;
+  border-style: double;
+}
+.green-border{
+  border: 8px solid #72FAFB;
+  border-style: double;
+}
+.grey-border{
+  border: 6px solid lightgrey;
+}
+.farr-logo{
+  border: 5px solid lightgrey;
+  margin: 0px 0px 20px 20px;
+}
+
+/* Glyphicons */
+.down-scroll-1{
+  margin-top: 490px;
+}
+.down-scroll-2{
+  margin-top: 80px;
+}
+.down-scroll-3{
+  margin-top: -5px;
+}
+.down-glyph>a{
+  font-size:80px;
+  color: #F6508F;
+}
+.down-glyph>a:hover{
+  font-size:90px;
+  color: #72FAFB;
+  text-decoration: none;
+}
+<!-- 
+.down-glyph-div>p>a{
+font-size:80px;
+color: #F6508F;
+}
+.down-glyph-div>p>a:hover{
+font-size:90px;
+color: #72FAFB;
+text-decoration: none;
+}    -->
+
+
+/* Navbar */
+.navbar{
+  margin-top: 0px;
+  background-color: transparent;
+  border-bottom: 8px solid #F6508F;
+  color: #090809;
+}
+.navbar-inverse .navbar-brand{
+  color: #090809;
+  font-size: 20px;
+}
+.top-logo{
+  position: absolute;
+  left: 50px;
+  top: -60px;
+  z-index: -1;
+}
+.top-logo-mobile{
+  position: absolute;
+  left: 50px;
+  top: -60px;
+  z-index: -1;
+}
+.navbar-inverse .navbar-nav>li>a {
+  padding: 65px 7px 0px 7px;
+  margin-top: -50px;
+  color: #090809;
+  font-size: 22px;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+  color: #F6508F;
+  border-top: 4px solid #F6508F;
+  padding-top: 61px;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+  color: #F6508F;
+  background-color: #fff;
+}
+.dropdown-menu>li>a {
+  display: block;
+  padding: 5px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #090809;
+  white-space: nowrap;
+}
+.dropdown-menu>li>a:hover{
+  color: #F6508F;
+}
+
 
 /* Home Page Carousel */
-
-header.carousel {
-    height: 50%;
+.fadein { 
+  position: relative; 
+  width:100%; 
+  height:100%; 
+}
+.fadein img{ 
+  position: absolute; 
+  left:0; 
+  top:0; 
 }
 
-header.carousel .item,
-header.carousel .item.active,
-header.carousel .carousel-inner {
-    height: 100%;
-}
-
-header.carousel .fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-}
 
 /* 404 Page Styles */
-
 .error-404 {
-    font-size: 100px;
+  font-size: 100px;
 }
 
 /* Pricing Page Styles */
-
 .price {
-    display: block;
-    font-size: 50px;
-    line-height: 50px;
+  display: block;
+  font-size: 50px;
+  line-height: 50px;
 }
-
 .price sup {
-    top: -20px;
-    left: 2px;
-    font-size: 20px;
+  top: -20px;
+  left: 2px;
+  font-size: 20px;
 }
-
 .period {
-    display: block;
-    font-style: italic;
+  display: block;
+  font-style: italic;
 }
 
 /* Footer Styles */
-
 footer {
-    margin: 50px 0;
+  margin: 50px 0px 25px 0px;
+}
+.kb-footer-text{
+  font-size: 14px;
+}
+
+
+
+/* Social Media Footer Bar */
+ul.share-buttons{
+  list-style:none;
+  padding:0
+}
+ul.share-buttons li{
+  display:inline
+}
+row.social-media ul {
+  margin:30px 0px 5px 0px;
+}
+.social-media-div{
+  margin: 20px 0px 0px 0px;
+}
+
+/* Social Media Sidebar */
+/*!
+* Contact Buttons Plugin Demo 0.1.0
+* https://github.com/joege/contact-buttons-plugin
+*
+* Copyright 2015, José Gonçalves
+*
+* Licensed under the MIT license:
+* http://www.opensource.org/licenses/MIT
+*/
+#contact-buttons-bar {
+  position: fixed;
+  top: 120px;
+  left: -50px;
+  width: 50px;
+}
+#contact-buttons-bar.slide-on-scroll {
+  position: absolute;
+}
+.contact-button-link  {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin-bottom: 1px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  background: #8e8e93;
+  color: #fff;
+  position: relative;
+  left: 0; 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  transition: all 250ms;
+}
+.contact-button-link:hover,
+.contact-button-link:focus,
+.contact-button-link:active {
+  color: #fff;
+  padding-left: 20px;
+  width: 70px;
+}
+.contact-button-link.cb-hidden {
+  left: -50px;
+}
+.contact-button-link.facebook {
+  background: #3b5998;
+}
+.contact-button-link.linkedin {
+  background: #0077b5;
+}
+.contact-button-link.gplus {
+  background: #db4437;
+}
+.contact-button-link.separated {
+  margin-top: 1em;
+}
+.show-hide-contact-bar,
+.contact-button-link.show-hide-contact-bar:focus,
+.contact-button-link.show-hide-contact-bar:active {
+  background: transparent;
+  color: #000;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  width: 50px;
+}
+.contact-button-link.show-hide-contact-bar:hover {
+  color: #000;
+  background: #ccc;
+  padding: 0;
+  width: 50px;
 }
 
 /* Responsive Styles */
+@media(max-width: 1200px){
+  .home-page-1{
+    margin-top: 0px;
+  }
+  .home-page-2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .header-space{
+    margin-bottom: 20px;
+  }
+  .down-scroll-1{
+    margin-top: 400px;
+  }
+  .down-scroll-2{
+    margin-top: 40px;
+  }
+  .down-scroll-3{
+    margin-top: -5px;
+  }
+}
+
+@media(max-width: 1100px){
+  .navbar-inverse .navbar-nav>li>a {
+    margin-top: -20px;
+    color: #090809;
+    font-size: 20px;
+  }
+  .navbar-inverse .navbar-nav>li>a:hover{
+    border-top: none;
+  }
+}
 
 @media(max-width:991px) {
-    .customer-img,
-    .img-related {
-        margin-bottom: 30px;
-    }
+  .customer-img,
+  .img-related {
+    margin-bottom: 30px;
+  }
+  .down-scroll-1{
+    margin-top: 300px;  
+  }
+  .navbar-inverse .navbar-nav>li>a{
+    font-size: 18px;  
+  }
 }
 
 @media(max-width:767px) {
-    .img-portfolio {
-        margin-bottom: 15px;
-    }
+  .img-portfolio {
+    margin-bottom: 15px;
+  }
+  header.carousel .carousel {
+    height: 70%;
+  }
+  .navbar-inverse .navbar-nav>li>a{
+    padding: 15px 20px 15px 0px;
+    text-align: right;
+  }
+  .navbar-inverse .navbar-toggle{
+    background-color: #F6508F;
+  }
+  .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:active,
+  .navbar-inverse .navbar-toggle:focus{
+    background-color: #72FAFB;
+  }
+  .navbar-inverse .navbar-nav>li>a:hover{
+    color: #F6508F;
+    border: none;
+    padding: 15px 20px 15px 0px;
+  }
+  li.dropdown{
+    display: none;
+  }
+  .home-page-2{
+    margin-bottom: 0px;
+  }
+  footer{
+    margin-top: 25px 0px;  
+  }
+}
 
-    header.carousel .carousel {
-        height: 70%;
-    }
+@media(min-width:767px){
+  .mobile-only{
+    display: none;
+  }
+}
+
+@media(max-width:650px){
+  .down-scroll-1{
+    margin-top: 250px;
+  }
+
+}
+
+@media(max-width:550px){
+  .down-scroll-1{
+    margin-top: 200px;
+  }
+}
+
+@media(max-width:400px){
+  .farr-logo{
+    align-content: center;
+  }
+  .navbar-inverse .navbar-toggle {
+    border-color: #333;
+    margin-top: 20px;
+  }
+  .down-scroll-1, .down-scroll-2, .down-scroll-3{
+    display: none;
+  }
+  
+  .home-page-1{
+      margin-top: 150px;
+  }
+  .down-glyph>a{
+    font-size:50px;
+  }
+  .down-glyph>a:hover{
+    font-size:60px;
+  }
+  .header-space{
+    margin-bottom: 10px;
+  }
+  h1{
+    font-size: 24px;  
+  }
+  p{
+    font-size: 18px;  
+  }
+  li{
+    font-size:15px;
+  }
+  .top-logo{
+    display: none;
+  }
+}
+
+@media(min-width: 400px){
+  .top-logo-mobile{
+    display: none;
+  } 
 }
