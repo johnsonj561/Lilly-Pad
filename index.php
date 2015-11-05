@@ -26,8 +26,8 @@
             <span class="icon-bar"></span>
           </button>
           <!--     <a class="navbar-brand" href="index.html">The Lilly Pad</a>   -->
-          <img class="img-responsive top-logo" src="img/lilly-pad-logo-v2-300x100.png"/><a name="top"></a>
-          <img class="img-responsive top-logo-mobile" src="img/lilly-pad-logo-240x70.png"/>
+          <img class="img-responsive top-logo" src="img/Lilly%20Pad%20logo%20v2%20300x100.png"/><a name="top"></a>
+          <img class="img-responsive top-logo-mobile" src="img/Lilly-Pad-logo-v2-240x90.png"/>
           <!--      <a class="btn btn-lg btn-default btn-block help-button" href="#">1-800-256-1888</a>    -->
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -57,13 +57,13 @@
               </ul>
             </li>
             <li>
-              <a href="#">Application</a>
+              <a href="view/application.php">Application</a>
             </li>
             <li>
               <a href="https://lillypad.gocashbox.com/" target="_blank">Pay Online</a>
             </li>
             <li>
-              <a href="view/contact.html">Contact</a>
+              <a href="view/contact.php">Contact</a>
             </li>
           </ul>
         </div>
@@ -74,14 +74,17 @@
       <!-- slider -->
       <div class="col-xs-12">
         <div class="fadein">
-          <img class = "img-responsive" src="img/slider-beach-spiritual-freedom-1100x500.jpg">
-          <img class = "img-responsive" src="img/lily-pad-flower-2-1100x500.jpg">
-          <img class = "img-responsive" src="img/spiritual-sunlight-freedom-1100x500.jpg">
-          <img class = "img-responsive" src="img/west-palm-beach-sunset-1100x500.jpg">
-          <img class = "img-responsive" src="img/lily-pad-flower-1100x500.jpg">
+          <img class = "img-responsive" src="img/slider-beach-spiritual-freedom-1100x450.jpg">
+          <img class = "img-responsive" src="img/lily-pad-flower-2-1100x450.jpg">
+          <img class = "img-responsive" src="img/spiritual-sunlight-freedom-1100x450.jpg">
+          <img class = "img-responsive" src="img/west-palm-beach-sunset-1100x450.jpg">
+          <img class = "img-responsive" src="img/lily-pad-flower-1100x450.jpg">
         </div>
       </div>
       <!-- down-scroll-1 -->
+      <div class="slogan">
+        <img class="img-responsive" src="img/lilly-pad-description-1200w-ni.png" alt=""/>
+      </div>
       <div class="col-lg-12 text-center down-scroll-1">
         <p class="down-glyph"><a href="#home-page-1">&#65086;</a></p>
       </div>
@@ -91,7 +94,7 @@
       <div class="row home-page-1" name="about" id="about"><a name="home-page-1"></a>
         <div class="col-md-4 col-sm-6 hero-feature">
           <div class="thumbnail">
-            <img src="img/west-palm-beach-spirituality-500x250.jpg" alt="">
+            <img  class="about-img" src="img/west-palm-beach-spirituality-500x250.jpg" alt="">
             <div class="caption">
               <h1 class="thumbnail-title text-center">West Palm Beach, Florida</h1>
               <p class="image-description">We offer a variety of living arrangements for women in recovery. Structure and safety are essential to
@@ -102,7 +105,7 @@
         </div>
         <div class="col-md-4 col-sm-6 hero-feature">
           <div class="thumbnail">
-            <img src="img/flagler-executive-3-500x250.jpg" alt="">
+            <img class="about-img" src="img/flagler-executive-3-500x250.jpg" alt="">
             <div class="caption">
               <h1 class="thumbnail-title text-center">Affordable Housing Options</h1>
               <p class="image-description">We have multiple living arrangements available, allowing you to choose the option that best suits your current circumstances.
@@ -114,7 +117,7 @@
         </div>
         <div class="col-md-4 col-sm-6 hero-feature">
           <div class="thumbnail">
-            <img src="img/girls-in-sobriety-500x250.jpg" alt="">
+            <img class="about-img" src="img/girls-in-sobriety-500x250.jpg" alt="">
             <div class="caption">
               <h1 class="thumbnail-title text-center">All Women's Fellowship</h1>
               <p class="image-description">Experience shows that an all women's living environment has the best results when laying the foundation in early sobriety.
@@ -131,7 +134,7 @@
         </div>
         <div class="col-lg-8"></div>
         <div class="col-lg-2">
-          <img class="img-responsive pull-left farr-logo" src="img/farr-logo-120x71.png"/>
+          <img class="img-responsive pull-right farr-logo" src="img/farr-logo-120x71.png"/>
         </div>
       </div> 
       <div class="row social-media-div">
@@ -168,7 +171,7 @@
                   </li>
                   <li class="footer-menu-divider">&sdot;</li>
                   <li>
-                    <a href="https://lillypad.gocashbox.com/">Pay Online</a>
+                    <a target="_blank" href="https://lillypad.gocashbox.com/">Pay Online</a>
                   </li>
                   <li class="footer-menu-divider">&sdot;</li>
                   <li>
