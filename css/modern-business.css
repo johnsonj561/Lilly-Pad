@@ -114,6 +114,14 @@ body {
   color: #F6508F;
   text-decoration: none;
 }
+.glyphicon-print{
+  font-size: 18px;
+  padding-right: 5px;
+}
+.glyphicon-send{
+  font-size: 18px;
+  padding-right: 5px;
+}
 <!-- 
 .down-glyph-div>p>a{
 font-size:80px;
@@ -135,8 +143,13 @@ text-decoration: none;
 
 /* Application */
 .form-subject{
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.form-subject-border{
+  border: 2px solid #F6508F;
+  padding: 10px;
+  border-radius: 20px;
 }
 .form-header{
   padding-left: 10px;
@@ -367,6 +380,9 @@ row.social-media ul {
 @media(max-width: 1200px){
   .slogan{
     margin-top: 380px;
+  }
+  .pc-only{
+    display: none;
   }
 }
 
