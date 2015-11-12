@@ -497,10 +497,10 @@ row.social-media ul {
     margin-top: 165px;  
   }
   .to-top>a{
-  color: #777;
-  font-weight: 400;
-  text-decoration: none;
-}
+    color: #777;
+    font-weight: 400;
+    text-decoration: none;
+  }
 }
 
 @media(max-width:400px){
