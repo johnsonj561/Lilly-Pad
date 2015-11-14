@@ -15,6 +15,7 @@
     <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
   </head>
   <body>
+    <a name="#top"></a>
     <?php require_once('../templates/navbar.html'); ?>
     <!-- Page Content -->
     <div class="container">
@@ -558,6 +559,15 @@
           </div>
         </form>
       </div>
+      <div class="col-lg-12 row">
+        <div class="col-lg-2">
+          <p class="to-top pull-left"><a href="#top">Back To Top</a></p>
+        </div>
+        <div class="col-lg-8"></div>
+        <div class="col-lg-2">
+          <img class="img-responsive pull-right farr-logo" src="../img/farr-logo-120x71.png"/>
+        </div>
+      </div> 
     </div>
     <?php 
 require_once('../templates/social-footer.html');
