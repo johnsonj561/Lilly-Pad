@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Contact C & T Auto Care to schedule appointments or ask any questions regarding your vehicle's reapirs.">
-    <meta name="author" content="C & T Auto">
+    <meta name="description" content="Contact The Lilly Pad with any questions about our West Palm Beach Women's Recovery Houses.">
+    <meta name="author" content="The Lilly Pad">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
-    <link rel="icon" type="image/x-icon" href="../img/wrench-gear-favicon-16-16.png" />
-    <title>C &amp; T Auto Care | Contact</title>
+    <link rel="icon" type="image/x-icon" href="../img/lily-pad-favicon-32x32.png" />
+    <title>Contact The Lilly Pad</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/modern-business.css" rel="stylesheet">
   </head>
@@ -53,17 +53,16 @@
                 <div class="col-lg-3 contact-div-1">
                   <h3 class="text-center">Contact Information</h3>
                   <div class="contact-info">
-                    <p><strong>Phone: </strong>
-                      <a href="tel:+15619097795" class="contact-link">561-629-7214</a>
+                    <p><strong>Phone 1: </strong>
+                      <a href="tel:+15617581011" class="contact-link">561-758-1011</a>
                     </p>
-                    <p><strong>Email: </strong>
-                      <a href="mailto:candtautocare@yahoo.com" class="contact-link">candtautocare@yahoo.com</a>
+                    <p><strong>Phone 2: </strong>
+                      <a href="tel:14407422809" class="contact-link">440-742-2809</a>
                     </p>
                     <p><strong>Location:</strong> 
                       <a class="contact-link" target="_blank"
-                         href="https://www.google.com/maps/place/1260+Plaza+Cir,+West+Palm+Beach,+FL+33404/data=!4m2!3m1!1s0x88d8d4f234f64211:0x4292d655348e98bb?sa=X&ved=0CB0Q8gEwAGoVChMI0dLBtKexxwIVCJ2ACh12iQok">1260 Plaza Circle</a>
+href="https://www.google.com/maps/place/West+Palm+Beach,+FL/@26.7419207,-80.1997062,12z/data=!3m1!4b1!4m2!3m1!1s0x88d8d5ccb595adc1:0x15efc7b51fe16bde">West Palm Beach, FL</a>
                     </p>
-                    <p class="location-line-2">Singer Island, FL 33404</p>
                   </div>
                 </div>
               </div>
@@ -79,8 +78,8 @@
           </div>
         </div>
       </div>
-      
+
       <?php require_once('../templates/social-footer.html');
-            require_once('../templates/footer.html'); ?>
+require_once('../templates/footer.html'); ?>
       </body>
     </html>

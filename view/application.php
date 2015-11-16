@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="The Lilly Pad West Palm Beach - Application for Women's Sober Living Housing">
+    <meta name="author" content="The Lilly Pad">
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <link rel="icon" type="image/x-icon" href="../img/lily-pad-favicon-32x32.png" />
     <title>Housing Application</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/modern-business.css" rel="stylesheet">
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript">var switchTo5x=true;</script>
-    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
   </head>
   <body>
     <a name="#top"></a>
@@ -21,7 +20,7 @@
     <div class="container">
       <div class="col-lg-12">
         <div class="">
-          <img class="img-responsive" src="../img/spiritual-tools-message-v3.png" alt=""/>
+          <img class="img-responsive spiritual-tools-mssg" src="../img/spiritual-tools-message-v3.png" alt="Spriritual Tools for Recovery"/>
         </div>
         <form role="form" action="../landing/application-landing.php" method = "post" 
               onsubmit = "return onApplicationSubmit()">
@@ -70,7 +69,7 @@
               </div>
             </div>
             <div class="col-lg-2 text-center">
-              <a href="print-application.php" target="_blank" class="btn btn-primary pc-only">
+              <a href="Lilly%20Pad%20Housing%20Application.pdf" target="_blank" class="btn btn-primary pc-only">
                 <span class="glyphicon glyphicon-print"></span> Print Application</a>
             </div>
           </div>
@@ -559,7 +558,7 @@
           </div>
         </form>
       </div>
-      <div class="col-lg-12 row">
+      <div class="col-lg-12 row padding-top-40">
         <div class="col-lg-2">
           <p class="to-top pull-left"><a href="#top">Back To Top</a></p>
         </div>
