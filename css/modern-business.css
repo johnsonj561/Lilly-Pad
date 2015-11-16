@@ -55,7 +55,9 @@ body {
 .home-page-1{
   margin-top: 75px;
 }
-
+.padding-top-40{
+  padding-top: 40px;
+}
 
 /* Buttons */
 .btn-default{
@@ -389,7 +391,6 @@ row.social-media ul {
 @media(max-width: 1100px){
   .navbar-inverse .navbar-nav>li>a {
     margin-top: -30px;
-    color: #090809;
     font-size: 20px;
   }
   .navbar-inverse .navbar-nav>li>a:hover{
@@ -490,6 +491,9 @@ row.social-media ul {
   .home-page-1{
     margin-top: 30px;
   }
+  .spiritual-tools-mssg, .common-bond-mssg{
+    display: none;
+  }
 }
 
 @media(max-width:500px){
@@ -501,6 +505,12 @@ row.social-media ul {
     font-weight: 400;
     text-decoration: none;
   }
+  .thumbnail-title{
+    font-size: 22px;  
+  }
+  .form-header{
+    font-size: 22px;
+  }
 }
 
 @media(max-width:400px){
@@ -509,7 +519,7 @@ row.social-media ul {
   }
   .navbar-inverse .navbar-toggle {
     border-color: #333;
-    margin-top: 25px;
+    margin-top: 10px;
   }
   .down-scroll-1{
     display: none;

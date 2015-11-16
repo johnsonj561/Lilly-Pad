@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="The Lilly Pad - Transitional and sober living environments for women in West Palm Beach, Florida.">
+    <meta name="author" content="The Lilly Pad">
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <link rel="icon" type="image/x-icon" href="img/lily-pad-favicon-32x32.png" />
     <title>The Lilly Pad</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript">var switchTo5x=true;</script>
-    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
   </head>
   <body>
     <!-- Navigation -->
@@ -178,11 +177,11 @@
       <div class="row social-media-div">
         <row class="text-center social-media">
           <ul class="share-buttons">
-            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.kbsoftwaresolutions.com&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="img/social-media/Facebook.png" alt="facebook-logo"></a></li>
-            <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.kbsoftwaresolutions.com&text=:%20http%3A%2F%2Fwww.kbsoftwaresolutions.com" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="img/social-media/Twitter.png" alt="twitter-logo"></a></li>
-            <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.kbsoftwaresolutions.com" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="img/social-media/Google+.png" alt="google-logo"></a></li>
-            <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.kbsoftwaresolutions.com&description=" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img src="img/social-media/Pinterest.png" alt="pinterest-logo"></a></li>
-            <li><a href="mailto:?subject=&body=:%20http%3A%2F%2Fwww.kbsoftwaresolutions.com" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img src="img/social-media/Email.png" alt="email-logo"></a></li>
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.thelillypadpb.com&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="img/social-media/Facebook.png" alt="facebook-logo"></a></li>
+            <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.thelillypadpb.com&text=:%20http%3A%2F%2Fwww.thelillypadpb.com" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="img/social-media/Twitter.png" alt="twitter-logo"></a></li>
+            <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.thelillypadpb.com" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="img/social-media/Google+.png" alt="google-logo"></a></li>
+            <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.thelillypadpb.com&description=" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img src="img/social-media/Pinterest.png" alt="pinterest-logo"></a></li>
+            <li><a href="mailto:?subject=&body=:%20http%3A%2F%2Fwww.thelillypadpb.com" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img src="img/social-media/Email.png" alt="email-logo"></a></li>
           </ul>
         </row>
       </div>
@@ -261,12 +260,6 @@
           $(this).find('ul').stop().slideToggle(300);
         });
       });
-    </script>
-    <script type="text/javascript">stLight.options({publisher: "f62e515e-8f42-4815-aec5-77d2c83198b5", doNotHash: false, doNotCopy: false, hashAddressBar: false});
-    </script>
-    <script>
-      var options={ "publisher": "f62e515e-8f42-4815-aec5-77d2c83198b5", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "linkedin", "email", "googleplus"]}};
-      var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
     </script>
   </body>
 </html>
