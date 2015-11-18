@@ -112,7 +112,7 @@ body {
   color: #777;
 }
 .down-glyph>a:hover{
-  font-size:90px;
+  font-size:82px;
   color: #F6508F;
   text-decoration: none;
 }
@@ -385,6 +385,12 @@ row.social-media ul {
   }
   .pc-only{
     display: none;
+  }
+  .contact-div-1{
+    margin-top: 50px;
+  }
+  .send-message-div{
+    margin-top: -20px;
   }
 }
 
