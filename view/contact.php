@@ -44,7 +44,7 @@
                     <div class="row form-group col-lg-9">
                       <p class = "intro-text text-center" name = "errorElement" id = "errorElement"></p>
                     </div><br>
-                    <div class="row form-group col-lg-9 text-center">
+                    <div class="row form-group col-lg-9 text-center send-message-div">
                       <input type="hidden" name="save" value="contact">
                       <button type="submit" class="btn btn-primary btn-large">Send Message</button>
                     </div>
