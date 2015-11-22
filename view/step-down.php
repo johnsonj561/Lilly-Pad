@@ -8,7 +8,7 @@
     <meta name="author" content="The Lilly Pad">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="icon" type="image/x-icon" href="../img/lily-pad-favicon-32x32.png" />
-    <title>Step Down Photo Gallery</title>
+    <title>The Lilly Pad | Step Down Housing</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/modern-business.css" rel="stylesheet">
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">

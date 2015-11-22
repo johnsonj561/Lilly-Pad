@@ -8,7 +8,7 @@
     <meta name="author" content="The Lilly Pad">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="icon" type="image/x-icon" href="img/lily-pad-favicon-32x32.png" />
-    <title>The Lilly Pad</title>
+    <title>The Lilly Pad | Healing Place For Recovery</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -25,8 +25,10 @@
             <span class="icon-bar"></span>
           </button>
           <!--     <a class="navbar-brand" href="index.html">The Lilly Pad</a>   -->
-          <img class="img-responsive top-logo" src="img/Lilly%20Pad%20logo%20v2%20300x100.png"/><a name="top"></a>
-          <img class="img-responsive top-logo-mobile" src="img/Lilly-Pad-logo-v2-240x90.png"/>
+          <img class="img-responsive top-logo" src="img/Lilly%20Pad%20logo%20v2%20300x100.png"
+               alt="Lilly Pad WomensHalfway House Logo"/><a name="top"></a>
+          <img class="img-responsive top-logo-mobile" src="img/Lilly-Pad-logo-v2-240x90.png"
+               alt="Lilly Pad Womens Halfway House"/>
           <!--      <a class="btn btn-lg btn-default btn-block help-button" href="#">1-800-256-1888</a>    -->
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -45,13 +47,13 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Properties<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li>
-                  <a href="view/properties.php#main-campus"#main-campus>Main Campus</a>
+                  <a href="view/properties.php#main-campus">Main Campus</a>
                 </li>
                 <li>
-                  <a href="view/properties.php#executive"#executive>Executive Housing</a>
+                  <a href="view/properties.php#executive">Executive Housing</a>
                 </li>
                 <li>
-                  <a href="view/properties.php#step-down"#step-down>Step Down Housing</a>
+                  <a href="view/properties.php#step-down">Step Down Housing</a>
                 </li>
               </ul>
             </li>
@@ -73,11 +75,16 @@
       <!-- slider -->
       <div class="col-xs-12">
         <div class="fadein">
-          <img class = "img-responsive" src="img/slider-beach-spiritual-freedom-1100x450.jpg">
-          <img class = "img-responsive" src="img/lily-pad-flower-2-1100x450.jpg">
-          <img class = "img-responsive" src="img/spiritual-sunlight-freedom-1100x450.jpg">
-          <img class = "img-responsive" src="img/west-palm-beach-sunset-1100x450.jpg">
-          <img class = "img-responsive" src="img/lily-pad-flower-1100x450.jpg">
+          <img class = "img-responsive" src="img/slider-beach-spiritual-freedom-1100x450.jpg" 
+               alt="Soberiety and Spirituality West Palm Beach">
+          <img class = "img-responsive" src="img/lily-pad-flower-2-1100x450.jpg"
+               alt="Lilly Pad Halfway House - Sobriety and Serenity">
+          <img class = "img-responsive" src="img/spiritual-sunlight-freedom-1100x450.jpg"
+               alt="Experience the freedom of recovery">
+          <img class = "img-responsive" src="img/west-palm-beach-sunset-1100x450.jpg"
+               alt="West Palm Beach Sober Living">
+          <img class = "img-responsive" src="img/lily-pad-flower-1100x450.jpg"
+               alt="Lilly Pad Womens Sober Housing West Palm Beach">
         </div>
       </div>
       <!-- down-scroll-1 -->
@@ -164,18 +171,16 @@
         </div>
         <div class="col-md-1"></div>
       </div>
-
       <div class="col-lg-12 row">
         <div class="col-lg-2">
           <p class="to-top pull-left"><a href="#top">Back To Top</a></p>
         </div>
         <div class="col-lg-8"></div>
         <div class="col-lg-2">
-          <img class="img-responsive pull-right farr-logo" src="img/farr-logo-120x71.png"/>
+          <img class="img-responsive pull-right farr-logo" src="img/farr-logo-120x71.png" alt="FARR Certified Halfway House"/>
         </div>
       </div> 
-      <div class="row social-media-div">
-        <row class="text-center social-media">
+      <div class="row social-media-div text-center">
           <ul class="share-buttons">
             <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.thelillypadpb.com&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="img/social-media/Facebook.png" alt="facebook-logo"></a></li>
             <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.thelillypadpb.com&text=:%20http%3A%2F%2Fwww.thelillypadpb.com" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="img/social-media/Twitter.png" alt="twitter-logo"></a></li>
@@ -183,7 +188,6 @@
             <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.thelillypadpb.com&description=" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img src="img/social-media/Pinterest.png" alt="pinterest-logo"></a></li>
             <li><a href="mailto:?subject=&body=:%20http%3A%2F%2Fwww.thelillypadpb.com" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img src="img/social-media/Email.png" alt="email-logo"></a></li>
           </ul>
-        </row>
       </div>
       <footer>
         <div class="container">

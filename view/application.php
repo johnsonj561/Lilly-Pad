@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The Lilly Pad West Palm Beach - Application for Women's Sober Living Housing">
+    <meta name="description" content="The Lilly Pad West Palm Beach - Application for Women's Transitional Living and Housing">
     <meta name="author" content="The Lilly Pad">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="icon" type="image/x-icon" href="../img/lily-pad-favicon-32x32.png" />
-    <title>Housing Application</title>
+    <title>The Lilly Pad | Housing Application</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/modern-business.css" rel="stylesheet">
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -283,11 +283,11 @@
                 <label class="pull-left">May We Contact Your Current or Prior Facilities?</label>
               </div>
               <div class="col-lg-3">
-                <input type="radio" class="form-group" name="canContactFacilities" id="canContactFacilities" value="Yes" checked required/>
+                <input type="radio" class="form-group" name="canContactFacilities" id="canContactFacilities1" value="Yes" checked required/>
                 <label class="radio-label">Yes</label>
               </div>
               <div class="col-lg-3">
-                <input type="radio" class="form-group" name="canContactFacilities" id="canContactFacilities" value="No"/>
+                <input type="radio" class="form-group" name="canContactFacilities" id="canContactFacilities2" value="No"/>
                 <label class="radio-label">No</label>
               </div>
               <div class="col-lg-6">
@@ -361,7 +361,7 @@
               </div>
               <div class="form-group col-lg-12">
                 <label>If Yes, Please Explain (Specify If Active)</label>
-                <textarea class="form-control" rows="3" name = "eatingDisorderHistoryMessage" id = "priorFacilityList"></textarea>
+                <textarea class="form-control" rows="3" name = "eatingDisorderHistoryMessage" id = "eatingDisorderHistoryMessage"></textarea>
               </div>
               <div class="col-lg-12">
                 <label class="pull-left">Have You Ever Been Treated for an Eating Disorder</label>
@@ -429,7 +429,7 @@
               <div class="col-lg-4">
                 <label class="pull-left">Highest Level Of Education</label>
                 <select class="form-control" name="highestEducation" required>
-                  <option selected value="0">Select</option>
+                  <option selected value="">Select</option>
                   <option value="GED">GED</option>
                   <option value="High School Graduate">High School Graduate</option>
                   <option value="Some College">Some College</option>
@@ -564,7 +564,7 @@
         </div>
         <div class="col-lg-8"></div>
         <div class="col-lg-2">
-          <img class="img-responsive pull-right farr-logo" src="../img/farr-logo-120x71.png"/>
+          <img class="img-responsive pull-right farr-logo" src="../img/farr-logo-120x71.png" alt="FARR Certified Halfway House"/>
         </div>
       </div> 
     </div>

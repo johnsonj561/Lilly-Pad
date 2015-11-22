@@ -8,7 +8,7 @@
     <meta name="author" content="The Lilly Pad">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="icon" type="image/x-icon" href="../img/lily-pad-favicon-32x32.png" />
-    <title>The Lilly Pad Properties</title>
+    <title>The Lilly Pad | Properties</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/modern-business.css" rel="stylesheet">
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -33,21 +33,16 @@
         </div>
         <div class="col-md-5">
           <h1 class="thumbnail-title">Main Campus</h1>
-<<<<<<< HEAD
           <p>Less than a mile away from West Palm Beach’s renowned ‘City Place’, the main campus is tucked away in a quaint neighborhood 
             that centers a recovery community. Equipped with a full sized kitchen, living and dining area, and an outdoor patio enclosure, 
             the residents are immersed in company and restoration.</p>
-=======
           <p>Less than a mile away from West Palm Beach’s renowned ‘City Place’, the main campus is tucked away in a quaint neighborhood that centers a recovery community. 
-		  Equipped with a full sized kitchen, living and dining area, and an outdoor patio enclosure, the residents are immersed in company and restoration.</p>
->>>>>>> b5d1cbcbcc24c3d0cf9006401dcc0b5185248be3
-          <a class="btn btn-primary" href="main-campus.php">View Images</i></a>
+            Equipped with a full sized kitchen, living and dining area, and an outdoor patio enclosure, the residents are immersed in company and restoration.</p>
+          <a class="btn btn-primary" href="main-campus.php">View Images</a>
       </div>
     </div>
     <!-- /.row -->
-
     <hr>
-
     <!-- Project Two -->
     <div class="row"><a name="executive"></a>
       <div class="col-md-7">
@@ -58,15 +53,12 @@
       </div>
       <div class="col-md-5">
         <h1 class="thumbnail-title">Executive Housing</h1>
-<<<<<<< HEAD
         <p>Walking distance from the Intracoastal and in close proximity to the beaches, the upscale executive housing is adorn with 
           a recreational swimming pool, formal living and dining rooms, as well as a private bathroom attached to each bedroom. Just 
           off Flagler Drive, the location of the executive house is nearby all of downtown Palm Beach.</p>
-=======
         <p>Walking distance from the Intracoastal and in close proximity to the beaches, the upscale executive housing is adorn with a recreational swimming pool, formal 
-		living and dining rooms, as well as a private bathroom attached to each bedroom. Just off Flagler Drive, the location of the executive house is nearby all of downtown Palm Beach.</p>
->>>>>>> b5d1cbcbcc24c3d0cf9006401dcc0b5185248be3
-        <a class="btn btn-primary" href="executive.php">View Images</i></a>
+          living and dining rooms, as well as a private bathroom attached to each bedroom. Just off Flagler Drive, the location of the executive house is nearby all of downtown Palm Beach.</p>
+        <a class="btn btn-primary" href="executive.php">View Images</a>
     </div>
     </div>
   <!-- /.row -->
@@ -80,15 +72,12 @@
     </div>
     <div class="col-md-5">
       <h1 class="thumbnail-title">Step Down Housing</h1>
-<<<<<<< HEAD
       <p>For the women who have completed their 90-day commitment at Lilly Pad’s main or executive house, the step down housing provides
         independence and personal accountability as they progress in their recovery. In the family-oriented suburb of Flamingo Park, 
         the residents will be able to experience and enjoy their newly achieved sobriety.</p>
-=======
       <p>For the women who have completed their 90-day commitment at Lilly Pad’s main or executive house, the step down housing provides independence and personal accountability as they 
-	  progress in their recovery. In the family-oriented suburb of Flamingo Park, the residents will be able to experience and enjoy their newly achieved sobriety.</p>
->>>>>>> b5d1cbcbcc24c3d0cf9006401dcc0b5185248be3
-      <a class="btn btn-primary" href="step-down.php">View Images</i></a>
+        progress in their recovery. In the family-oriented suburb of Flamingo Park, the residents will be able to experience and enjoy their newly achieved sobriety.</p>
+      <a class="btn btn-primary" href="step-down.php">View Images</a>
   </div>
   </div>
 <!-- /.row -->
@@ -98,7 +87,7 @@
   </div>
   <div class="col-lg-8"></div>
   <div class="col-lg-2">
-    <img class="img-responsive pull-right farr-logo" src="../img/farr-logo-120x71.png"/>
+    <img class="img-responsive pull-right farr-logo" src="../img/farr-logo-120x71.png" alt="FARR Certified Halfway House"/>
   </div>
 </div> 
 </div>
