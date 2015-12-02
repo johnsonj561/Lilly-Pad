@@ -1,7 +1,7 @@
 <?php
 $name = strip_tags($_POST['name']);
 $email = strip_tags($_POST['email']);
-$phoneNumber = strip_tags($_POST['phoneNumber']);
+$phoneNumber = strip_tags($_POST['phone']);
 $message = strip_tags($_POST['message']);
 $headers = "From: www.wpblillypad.com\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
@@ -42,11 +42,64 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Messaging Center", $emailMess
     <link rel="icon" type="image/x-icon" href="../img/kb-favicon.png" />
     <title>KB Software Solutions | Message Received</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/small-business.css" rel="stylesheet">
+    <link href="../css/modern-business.css" rel="stylesheet">
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   </head>
-
   <body>
-    <?php require_once('../template/navbar.html'); ?>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">  <!--removed navbar-fixed-top -->
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--     <a class="navbar-brand" href="index.html">The Lilly Pad</a>   -->
+          <img class="img-responsive top-logo" src="../img/Lilly%20Pad%20logo%20v2%20300x100.png"/><a name="top"></a>
+          <img class="img-responsive top-logo-mobile" src="../img/Lilly-Pad-logo-v2-240x90.png"/>
+          <!--      <a class="btn btn-lg btn-default btn-block help-button" href="#">1-800-256-1888</a>    -->
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="../index.php">Home</a>
+            </li>
+            <li>
+              <a href="../index.php#home-page-1">About</a>
+            </li>
+            <li class="mobile-only">
+              <a href="../view/properties.php">Properties</a>
+            </li>
+            <li class="dropdown">
+              <a href="../view/properties.php" class="dropdown-toggle" data-toggle="dropdown">Properties<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="../view/properties.php#main-campus">Main Campus</a>
+                </li>
+                <li>
+                  <a href="../view/properties.php#executive">Executive Housing</a>
+                </li>
+                <li>
+                  <a href="../view/properties.php#step-down">Step Down Housing</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="../view/application.php">Application</a>
+            </li>
+            <li>
+              <a href="https://lillypad.gocashbox.com/" target="_blank">Pay Online</a>
+            </li>
+            <li>
+              <a href="../view/contact.php">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <a  name="services"></a>
     <div class="container">
       <div class="row">
@@ -81,11 +134,11 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Messaging Center", $emailMess
               </li>
               <li class="footer-menu-divider">&sdot;</li>
               <li>
-                <a href="properties.php">Properties</a>
+                <a href="../view/properties.php">Properties</a>
               </li>
               <li class="footer-menu-divider">&sdot;</li>
               <li>
-                <a href="application.php">Application</a>
+                <a href="../view/application.php">Application</a>
               </li>
               <li class="footer-menu-divider">&sdot;</li>
               <li>
@@ -93,7 +146,7 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Messaging Center", $emailMess
               </li>
               <li class="footer-menu-divider">&sdot;</li>
               <li>
-                <a href="contact.php">Contact</a>
+                <a href="../view/contact.php">Contact</a>
               </li>
               <li class="footer-menu-divider">&sdot;</li>
 
@@ -113,14 +166,6 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Messaging Center", $emailMess
   <script src="../js/jquery.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script>
-    $(function(){
-      $('.fadein img:gt(0)').hide();
-      setInterval(function(){
-        $('.fadein :first-child').fadeOut()
-        .next('img').fadeIn()
-        .end().appendTo('.fadein');}, 
-                  5000);
-    });
     $(function() {
       $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
