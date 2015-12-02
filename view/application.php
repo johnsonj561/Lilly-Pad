@@ -45,7 +45,7 @@
               </div>
               <div class="col-lg-4">
                 <label class="pull-left">Apt/Suite #</label>
-                <input type="text" class="form-control" name = "apt" id = "apt" required>
+                <input type="text" class="form-control" name = "apt" id = "apt">
               </div>
               <div class="col-lg-5">
                 <label class="pull-left">City</label>
