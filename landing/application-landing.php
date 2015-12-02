@@ -85,105 +85,105 @@ $emailMessage =
   "<h2>Lilly Pad Housing Application</h2>
     <h3>Basic Information</h3>
     <table>
-    <tr>Full Name: $fullName</tr>
-    <tr>Date of Bith: $dob</tr>
-    <tr>Street Address: $street</tr>
-    <tr>Apt/Suite #: $apt</tr>
-    <tr>City: $city</tr>
-    <tr>State: $state</tr>
-    <tr>Zip: $zip</tr>
-    <tr>Primary Phone: $clientPhone</tr>
-    <tr>Email: $clientEmail</tr>
+    <tr><td>Full Name: $fullName</td></tr>
+    <tr><td>Date of Bith: $dob</td></tr>
+    <tr><td>Street Address: $street</td></tr>
+    <tr><td>Apt/Suite #: $apt</td></tr>
+    <tr><td>City: $city</td></tr>
+    <tr><td>State: $state</td></tr>
+    <tr><td>Zip: $zip</td></tr>
+    <tr><td>Primary Phone: $clientPhone</td></tr>
+    <tr><td>Email: $clientEmail</td></tr>
     </table>
     <br>
   <h3>Emergency Contact</h3>
     <table>
-    <tr>Full Name: $emergencyContact</tr>
-    <tr>Relationship: $emergencyRelationship</tr>
-    <tr>Street Address: $emergencyStreet</tr>
-    <tr>Apt/Suite #: $emergencyApt</tr>
-    <tr>City: $emergencyCity</tr>
-    <tr>State: $emergencyState</tr>
-    <tr>Zip: $emergencyZip</tr>
-    <tr>Primary Phone: $emergencyPhone</tr>
-    <tr>Email: $emergencyEmail</tr>
+    <tr><td>Full Name: $emergencyContact</td></tr>
+    <tr><td>Relationship: $emergencyRelationship</td></tr>
+    <tr><td>Street Address: $emergencyStreet</td></tr>
+    <tr><td>Apt/Suite #: $emergencyApt</td></tr>
+    <tr><td>City: $emergencyCity</td></tr>
+    <tr><td>State: $emergencyState</td></tr>
+    <tr><td>Zip: $emergencyZip</td></tr>
+    <tr><td>Primary Phone: $emergencyPhone</td></tr>
+    <tr><td>Email: $emergencyEmail</td></tr>
     </table>
     <br>
   <h3>Drug & Alcohol History</h3>
     <table>
-    <tr>Primary Substance of Choice: $primarySubstance</tr>
-    <tr>Date Last Used: $primaryDate</tr>
-    <tr>Frequency of Use: $primaryFrequency</tr>
-    <tr>Months/Years of Use: $primaryPeriod</tr>
-    <tr>Secondary Substance of Choice: $secondarySubstance</tr>
-    <tr>Date Last Used: $secondaryDate</tr>
-    <tr>Frequency of Use: $secondaryFrequency</tr>
-    <tr>Months/Years of Use: $secondaryPeriod</tr>
-    <tr>Are any family members in active addiction or recovery from: $familyAddiction</tr>
-    <tr>If Yes, Please Explain: $familyAddictionMessage</tr>
-    <tr>Additional Information Regarding Your Drug/Alcohol Use (Optional): $abuseSummary</tr>
+    <tr><td>Primary Substance of Choice: $primarySubstance</td></tr>
+    <tr><td>Date Last Used: $primaryDate</td></tr>
+    <tr><td>Frequency of Use: $primaryFrequency</td></tr>
+    <tr><td>Months/Years of Use: $primaryPeriod</td></tr>
+    <tr><td>Secondary Substance of Choice: $secondarySubstance</td></tr>
+    <tr><td>Date Last Used: $secondaryDate</td></tr>
+    <tr><td>Frequency of Use: $secondaryFrequency</td></tr>
+    <tr><td>Months/Years of Use: $secondaryPeriod</td></tr>
+    <tr><td>Are any family members in active addiction or recovery from: $familyAddiction</td></tr>
+    <tr><td>If Yes, Please Explain: $familyAddictionMessage</td></tr>
+    <tr><td>Additional Information Regarding Your Drug/Alcohol Use (Optional): $abuseSummary</td></tr>
     </table>
     <br>
     <h3>Psych & Medical History</h3>
     <table>
-    <tr>Allergies: $allergies</tr>
-    <tr>Currently Taking Medications: $takingMedications</tr>
-    <tr>Prescribing Physician: $prescribingPhysician</tr>
-    <tr>Current Medication List: $currentMedications</tr>
-    <tr>Currently in Treatment: $inTreatment</tr>
-    <tr>Current Treatment Center: $currentFacility</tr>
-    <tr>Prior Treatment Centers: $priorFacilities</tr>
-    <tr>May we contact current facility: $permissionToContactFacility</tr>
-    <tr>If not, then why: $permissionToContactExplanation</tr>
-    <tr>Have you ever been treated for Psych/Mental Health Condition: $hadPsychTreatment</tr>
-    <tr>If Yes, Please Provide Dates and Explain: $psychHistoryMessage</tr>
-    <tr>Height: $height</tr>
-    <tr>Weight: $weight</tr>
-    <tr>Weight Last Year: $oldWeight</tr>
-    <tr>Do you believe you have an eating disorder: $haveEatingDisorder</tr>
-    <tr>Have history of Binging, Purging, Laxative/Diuretic Use: $eatingDisorderHistory</tr>
-    <tr>If Yes, Please Explain (Specify if active): $eatingDisorderHistoryMessage</tr>
-    <tr>Have you ever been treated for an eating disorder: $treatedEatingDisorder</tr>
-    <tr>If Yes, Please Explain: $treatedEatingDisorderMessage</tr>
+    <tr><td>Allergies: $allergies</td></tr>
+    <tr><td>Currently Taking Medications: $takingMedications</td></tr>
+    <tr><td>Prescribing Physician: $prescribingPhysician</td></tr>
+    <tr><td>Current Medication List: $currentMedications</td></tr>
+    <tr><td>Currently in Treatment: $inTreatment</td></tr>
+    <tr><td>Current Treatment Center: $currentFacility</td></tr>
+    <tr><td>Prior Treatment Centers: $priorFacilities</td></tr>
+    <tr><td>May we contact current facility: $permissionToContactFacility</td></tr>
+    <tr><td>If not, then why: $permissionToContactExplanation</td></tr>
+    <tr><td>Have you ever been treated for Psych/Mental Health Condition: $hadPsychTreatment</td></tr>
+    <tr><td>If Yes, Please Provide Dates and Explain: $psychHistoryMessage</td></tr>
+    <tr><td>Height: $height</td></tr>
+    <tr><td>Weight: $weight</td></tr>
+    <tr><td>Weight Last Year: $oldWeight</td></tr>
+    <tr><td>Do you believe you have an eating disorder: $haveEatingDisorder</td></tr>
+    <tr><td>Have history of Binging, Purging, Laxative/Diuretic Use: $eatingDisorderHistory</td></tr>
+    <tr><td>If Yes, Please Explain (Specify if active): $eatingDisorderHistoryMessage</td></tr>
+    <tr><td>Have you ever been treated for an eating disorder: $treatedEatingDisorder</td></tr>
+    <tr><td>If Yes, Please Explain: $treatedEatingDisorderMessage</td></tr>
     </table>
     <br>
     <h3>Current Treatment Center</h3>
     <table>
-    <tr>Current Facility Name: $currentFacilityName</tr>
-    <tr>Expected Discharge Date: $currentFacilityDCDate</tr>
-    <tr>Primary Therapist's Name: $primaryTherapistName</tr>
-    <tr>Primary Therapist's Phone #: $primaryTherapistTelephone</tr>
-    <tr>Primary Therapist's Email: $primaryTherapistEmail</tr>
+    <tr><td>Current Facility Name: $currentFacilityName</td></tr>
+    <tr><td>Expected Discharge Date: $currentFacilityDCDate</td></tr>
+    <tr><td>Primary Therapist's Name: $primaryTherapistName</td></tr>
+    <tr><td>Primary Therapist's Phone #: $primaryTherapistTelephone</td></tr>
+    <tr><td>Primary Therapist's Email: $primaryTherapistEmail</td></tr>
     </table>
     <br>
     <h3>Education & Employment</h3>
     <table>
-    <tr>Highest Level Of Education: $highestEducation</tr>
-    <tr>Expected Discharge Date: $currentFacilityDCDate</tr>
-    <tr>Primary Therapist's Name: $primaryTherapistName</tr>
-    <tr>Primary Therapist's Phone #: $primaryTherapistTelephone</tr>
-    <tr>Primary Therapist's Email: $primaryTherapistEmail</tr>
+    <tr><td>Highest Level Of Education: $highestEducation</td></tr>
+    <tr><td>Name of Institution: $educationInstitution</td></tr>
+    <tr><td>Are You Currently Employed: $currentlyEmployed</td></tr>
+    <tr><td>If Yes, Please Explain (Specify if Expected to Return to Work): $currentEmploymentMessage</td></tr>
+    <tr><td>List Any Vocational Skills: $vocationalSkills</td></tr>
     </table>
     <br>
     <h3>Legal Obligations</h3>
     <table>
-    <tr>Do you have any past legal issues: $pastLegalIssues</tr>
-    <tr>If Yes, Please List Convictions and Dates: $pastLegalMessage</tr>
-    <tr>Do you have any current legal obligations: $currentLegalIssues</tr>
-    <tr>If yes, please Explain (Include Court Dates and Requirements): $currentLegalMessage</tr>
+    <tr><td>Do you have any past legal issues: $pastLegalIssues</td></tr>
+    <tr><td>If Yes, Please List Convictions and Dates: $pastLegalMessage</td></tr>
+    <tr><td>Do you have any current legal obligations: $currentLegalIssues</td></tr>
+    <tr><td>If yes, please Explain (Include Court Dates and Requirements): $currentLegalMessage</td></tr>
     </table>
     <br>
     <h3>Insurance Information</h3>
     <table>
-    <tr>Insurance Provider: $insuranceProvider</tr>
-    <tr>Insurance Telephone #: $insuranceTelephone</tr>
-    <tr>Insurance ID #: $insuranceID;</tr>
-    <tr>Insurance Group: $insuranceGroup</tr>
-    <tr>Primary Insured: $primaryInsured</tr>
-    <tr>Primary Insured Relationship: $primaryInsuredRelationship</tr>
+    <tr><td>Insurance Provider: $insuranceProvider</td></tr>
+    <tr><td>Insurance Telephone #: $insuranceTelephone</td></tr>
+    <tr><td>Insurance ID #: $insuranceID</td></tr>
+    <tr><td>Insurance Group: $insuranceGroup</td></tr>
+    <tr><td>Primary Insured: $primaryInsured</td></tr>
+    <tr><td>Primary Insured Relationship: $primaryInsuredRelationship</td></tr>
     </table>
     <br>";
-$result = mail("jjohnson@ambrosiatc.com", "Lilly Pad Housing Application", $emailMessage, $headers);
+$result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailMessage, $headers);
 ?>
 
 <!DOCTYPE html>
@@ -202,7 +202,60 @@ $result = mail("jjohnson@ambrosiatc.com", "Lilly Pad Housing Application", $emai
     <link href="../css/modern-business.css" rel="stylesheet">
   </head>
   <body>
-    <?php require_once('../templates/navbar.html'); ?>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">  <!--removed navbar-fixed-top -->
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--     <a class="navbar-brand" href="index.html">The Lilly Pad</a>   -->
+          <img class="img-responsive top-logo" src="../img/Lilly%20Pad%20logo%20v2%20300x100.png"/><a name="top"></a>
+          <img class="img-responsive top-logo-mobile" src="../img/Lilly-Pad-logo-v2-240x90.png"/>
+          <!--      <a class="btn btn-lg btn-default btn-block help-button" href="#">1-800-256-1888</a>    -->
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="../index.php">Home</a>
+            </li>
+            <li>
+              <a href="../index.php#home-page-1">About</a>
+            </li>
+            <li class="mobile-only">
+              <a href="../view/properties.php">Properties</a>
+            </li>
+            <li class="dropdown">
+              <a href="../view/properties.php" class="dropdown-toggle" data-toggle="dropdown">Properties<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="../view/properties.php#main-campus">Main Campus</a>
+                </li>
+                <li>
+                  <a href="../view/properties.php#executive">Executive Housing</a>
+                </li>
+                <li>
+                  <a href="../view/properties.php#step-down">Step Down Housing</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="../view/application.php">Application</a>
+            </li>
+            <li>
+              <a href="https://lillypad.gocashbox.com/" target="_blank">Pay Online</a>
+            </li>
+            <li>
+              <a href="../view/contact.php">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="container">
       <div class="row">
         <div class="col-lg-5 col-sm-6">
@@ -236,11 +289,11 @@ $result = mail("jjohnson@ambrosiatc.com", "Lilly Pad Housing Application", $emai
               </li>
               <li class="footer-menu-divider">&sdot;</li>
               <li>
-                <a href="properties.php">Properties</a>
+                <a href="../view/properties.php">Properties</a>
               </li>
               <li class="footer-menu-divider">&sdot;</li>
               <li>
-                <a href="application.php">Application</a>
+                <a href="../view/application.php">Application</a>
               </li>
               <li class="footer-menu-divider">&sdot;</li>
               <li>
@@ -248,7 +301,7 @@ $result = mail("jjohnson@ambrosiatc.com", "Lilly Pad Housing Application", $emai
               </li>
               <li class="footer-menu-divider">&sdot;</li>
               <li>
-                <a href="contact.php">Contact</a>
+                <a href="../view/contact.php">Contact</a>
               </li>
               <li class="footer-menu-divider">&sdot;</li>
 
