@@ -36,8 +36,6 @@
           <p>Less than a mile away from West Palm Beach’s renowned ‘City Place’, the main campus is tucked away in a quaint neighborhood 
             that centers a recovery community. Equipped with a full sized kitchen, living and dining area, and an outdoor patio enclosure, 
             the residents are immersed in company and restoration.</p>
-          <p>Less than a mile away from West Palm Beach’s renowned ‘City Place’, the main campus is tucked away in a quaint neighborhood that centers a recovery community. 
-            Equipped with a full sized kitchen, living and dining area, and an outdoor patio enclosure, the residents are immersed in company and restoration.</p>
           <a class="btn btn-primary" href="main-campus.php">View Images</a>
       </div>
     </div>
@@ -56,8 +54,6 @@
         <p>Walking distance from the Intracoastal and in close proximity to the beaches, the upscale executive housing is adorn with 
           a recreational swimming pool, formal living and dining rooms, as well as a private bathroom attached to each bedroom. Just 
           off Flagler Drive, the location of the executive house is nearby all of downtown Palm Beach.</p>
-        <p>Walking distance from the Intracoastal and in close proximity to the beaches, the upscale executive housing is adorn with a recreational swimming pool, formal 
-          living and dining rooms, as well as a private bathroom attached to each bedroom. Just off Flagler Drive, the location of the executive house is nearby all of downtown Palm Beach.</p>
         <a class="btn btn-primary" href="executive.php">View Images</a>
     </div>
     </div>
@@ -75,8 +71,6 @@
       <p>For the women who have completed their 90-day commitment at Lilly Pad’s main or executive house, the step down housing provides
         independence and personal accountability as they progress in their recovery. In the family-oriented suburb of Flamingo Park, 
         the residents will be able to experience and enjoy their newly achieved sobriety.</p>
-      <p>For the women who have completed their 90-day commitment at Lilly Pad’s main or executive house, the step down housing provides independence and personal accountability as they 
-        progress in their recovery. In the family-oriented suburb of Flamingo Park, the residents will be able to experience and enjoy their newly achieved sobriety.</p>
       <a class="btn btn-primary" href="step-down.php">View Images</a>
   </div>
   </div>
