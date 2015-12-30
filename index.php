@@ -224,10 +224,9 @@
                 <p class="copyright text-muted medium">Copyright &copy; The Lilly Pad West Palm Beach, All Rights Reserved</p>
               </div>
               <div class="col-lg-5">
-                <p class="pull-right kb-footer-text">
-                  <img src="img/kb-logo-v3-75x60.png" alt="KB Software Solutions Web Design">
-                  <a href="http://www.kbsoftwaresolutions.com" target="_blank">Website Development by KB Software Solutions</a>
-                </p><a name="home-page-3"></a>
+                <p class="pull-right">
+                  <a href="http://www.kbsoftwaresolutions.com"><img src="img/kb-logo-150x75.png" alt="KB Software Solutions Web Design"/></a>
+                </p>
               </div>
             </div>
           </div>
