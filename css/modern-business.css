@@ -49,7 +49,7 @@ body {
   opacity: 0.8;
 }
 .slogan{
-  margin-top: 440px;
+  margin-top: 460px;
 }
 /* Home Page Information Frames */
 .home-page-1{
@@ -105,7 +105,7 @@ body {
 
 /* Glyphicons */
 .down-scroll-1{
-  margin-top: -40px;
+  margin-top: -37px;
 }
 .down-glyph>a{
   font-size:80px;
@@ -254,21 +254,6 @@ text-decoration: none;
   font-size: 100px;
 }
 
-/* Pricing Page Styles */
-.price {
-  display: block;
-  font-size: 50px;
-  line-height: 50px;
-}
-.price sup {
-  top: -20px;
-  left: 2px;
-  font-size: 20px;
-}
-.period {
-  display: block;
-  font-style: italic;
-}
 
 
 /* Footer Styles */
@@ -296,7 +281,15 @@ row.social-media ul {
 .social-media-div{
   margin: 20px 0px 0px 0px;
 }
-
+.social-media-row{
+  margin-bottom: 20px;
+}
+.g-plus-button{
+  margin-top: -2px;
+}
+.social-media-like-buttons{
+  margin-top: -10px;
+}
 /* Social Media Sidebar */
 /*!
 * Contact Buttons Plugin Demo 0.1.0
@@ -403,7 +396,7 @@ row.social-media ul {
     border-top: none;
   }
   .slogan{
-    margin-top: 360px;
+    margin-top: 380px;
   }
 }
 
@@ -421,7 +414,7 @@ row.social-media ul {
     padding-top: 66px;
   }
   .slogan{
-    margin-top: 300px;
+    margin-top: 310px;
   }
   .down-scroll-1{
     margin-top: 10px;
@@ -452,7 +445,7 @@ row.social-media ul {
     display: none;
   }
   .slogan{
-    margin-top: 280px;
+    margin-top: 290px;
   }
   .down-scroll-1{
     margin-top: 10px;
@@ -468,6 +461,14 @@ row.social-media ul {
   }
 }
 
+@media(min-width:600px){
+  .article-image{
+    float: right;
+    margin: 0 0 10px 10px;
+    max-width: 300px;
+  }
+}
+
 @media(min-width:767px){
   li.mobile-only{
     display: none;
@@ -479,17 +480,19 @@ row.social-media ul {
 
 @media(max-width:650px){
   .slogan{
-    margin-top: 240px;
+    margin-top: 250px;
   }
   .down-scroll-1{
     margin-top: 10px;
   }
-
+  .article-image{
+    margin-bottom: 15px;
+  }
 }
 
 @media(max-width:550px){
   .slogan{
-    margin-top: 180px;
+    margin-top: 200px;
   }
   .down-scroll-1{
     margin-top: 5px;
@@ -500,11 +503,12 @@ row.social-media ul {
   .spiritual-tools-mssg, .common-bond-mssg{
     display: none;
   }
+
 }
 
 @media(max-width:500px){
   .slogan{
-    margin-top: 165px;  
+    margin-top: 185px;  
   }
   .to-top>a{
     color: #777;
@@ -531,7 +535,7 @@ row.social-media ul {
     display: none;
   }
   .slogan{
-    margin-top: 125px;
+    margin-top: 140px;
   }
   .home-page-1{
     margin-top: 20px;
