@@ -12,12 +12,25 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/modern-business.css" rel="stylesheet">
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Google Button Script -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
     <a name="#top"></a>
+    <!-- Facebook Script -->
+    <?php require_once('../templates/facebook-google-like-script.html'); ?>
     <?php require_once('../templates/navbar.html'); ?>
     <!-- Page Content -->
     <div class="container">
+      <!-- Social Media Like Buttons -->
+      <div class="col-xs-12 social-media-like-buttons">
+        <!--Facebook Button -->
+        <div class="fb-like pull-right" data-href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+        <!-- Google Button -->
+        <div class="pull-right g-plus-button">
+          <div class="g-plusone"></div>
+        </div>
+      </div>
       <div class="col-lg-12">
         <div class="">
           <img class="img-responsive spiritual-tools-mssg" src="../img/spiritual-tools-message-v3.png" alt="Spriritual Tools for Recovery"/>

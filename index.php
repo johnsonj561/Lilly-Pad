@@ -12,9 +12,12 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Google Button Script -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
-    <!-- Navigation -->
+    <!-- Facebook Script -->
+    <?php require_once('templates/facebook-google-like-script.html'); ?>
     <nav class="navbar navbar-inverse navbar-static-top" role="navigation">  <!--removed navbar-fixed-top -->
       <div class="container">
         <div class="navbar-header">
@@ -61,6 +64,9 @@
               <a href="view/application.php">Application</a>
             </li>
             <li>
+              <a href="view/articles.php">Articles</a>
+            </li>
+            <li>
               <a href="https://lillypad.gocashbox.com/" target="_blank">Pay Online</a>
             </li>
             <li>
@@ -72,6 +78,15 @@
     </nav>
 
     <div class="container">
+      <!-- Social Media Like Buttons -->
+      <div class="col-xs-12 social-media-like-buttons">
+        <!--Facebook Button -->
+        <div class="fb-like pull-right" data-href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+        <!-- Google Button -->
+        <div class="pull-right g-plus-button">
+          <div class="g-plusone"></div>
+        </div>
+      </div>
       <!-- slider -->
       <div class="col-xs-12">
         <div class="fadein">
@@ -101,7 +116,7 @@
         <div class="col-md-4 col-sm-6 hero-feature">
           <div class="thumbnail">
             <a target="_blank" href="https://www.google.com/maps/place/West+Palm+Beach,+FL/@26.7419207,-80.1997062,12z/data=!3m1!4b1!4m2!3m1!1s0x88d8d5ccb595adc1:0x15efc7b51fe16bde">
-               <img  class="about-img" src="img/beach-meditation-500x250.jpg" alt="Sober meditation on beach"></a>
+              <img  class="about-img" src="img/beach-meditation-500x250.jpg" alt="Sober meditation on beach"></a>
             <div class="caption">
               <h1 class="thumbnail-title text-center">West Palm Beach, Florida</h1>
               <p class="image-description">We offer a variety of living arrangements for recovering women in West Palm Beach Florida.
@@ -152,7 +167,7 @@
                 intensive outpatient treatment and the Lilly Pad; conduct family sessions via phone or in person; link client to community 
                 resources such as mental health appointments, food-stamps, vocational training, resume work-shops, insurance networking; assist 
                 with budgeting and time management. Medication compliance is another very important part of this program too.
-              <a href="view/contact.php">Contact us</a> for more information.</p>
+                <a href="view/contact.php">Contact us</a> for more information.</p>
             </div>
           </div>
         </div>
@@ -171,16 +186,13 @@
         </div>
         <div class="col-md-1"></div>
       </div>
-      <div class="col-lg-12 row">
-        <div class="col-lg-2">
-          <p class="to-top pull-left"><a href="#top">Back To Top</a></p>
-        </div>
-        <div class="col-lg-8"></div>
-        <div class="col-lg-2">
-          <img class="img-responsive pull-right farr-logo" src="img/farr-logo-120x71.png" alt="FARR Certified Halfway House"/>
-        </div>
-      </div> 
-      <div class="row social-media-div text-center">
+
+      <p class="to-top pull-left"><a href="#top">Back To Top</a></p>
+
+
+      <div class="col-lg-12 social-media-row">
+        <div class="text-center">
+          <h2>Share With a Friend</h2>
           <ul class="share-buttons">
             <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.thelillypadpb.com&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="img/social-media/Facebook.png" alt="facebook-logo"></a></li>
             <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.thelillypadpb.com&text=:%20http%3A%2F%2Fwww.thelillypadpb.com" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="img/social-media/Twitter.png" alt="twitter-logo"></a></li>
@@ -188,13 +200,15 @@
             <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.thelillypadpb.com&description=" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img src="img/social-media/Pinterest.png" alt="pinterest-logo"></a></li>
             <li><a href="mailto:?subject=&body=:%20http%3A%2F%2Fwww.thelillypadpb.com" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img src="img/social-media/Email.png" alt="email-logo"></a></li>
           </ul>
+        </div>
       </div>
+
       <footer>
         <div class="container">
           <div class="row">
             <div class=" row col-lg-12">
               <div class="col-lg-7">
-                <ul class="list-inline">
+                <ul class="list-inline text-center">
                   <li>
                     <a href="index.php">Home</a>
                   </li>
@@ -212,20 +226,35 @@
                   </li>
                   <li class="footer-menu-divider">&sdot;</li>
                   <li>
+                    <a href="view/articles.php">Articles</a>
+                  </li>
+                  <li class="footer-menu-divider">&sdot;</li>
+                  <li>
                     <a target="_blank" href="https://lillypad.gocashbox.com/">Pay Online</a>
+                  </li>
+                  <li class="footer-menu-divider">&sdot;</li>
+                  <li>
+                    <a href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" target="_blank">Facebook Page</a>
                   </li>
                   <li class="footer-menu-divider">&sdot;</li>
                   <li>
                     <a href="view/contact.php">Contact</a>
                   </li>
-                  <li class="footer-menu-divider">&sdot;</li>
-
                 </ul>
-                <p class="copyright text-muted medium">Copyright &copy; The Lilly Pad West Palm Beach, All Rights Reserved</p>
+                <p class="copyright text-muted medium text-center">Copyright &copy; The Lilly Pad West Palm Beach, All Rights Reserved</p>
               </div>
-              <div class="col-lg-5">
-                <p class="pull-right">
-                  <a href="http://www.kbsoftwaresolutions.com"><img src="img/kb-logo-150x75.png" alt="KB Software Solutions Web Design"/></a>
+              <div class="col-lg-2">
+                <p class="text-center">
+                  <a href="http://farronline.org">
+                    <img class="img-responsive pull-right farr-logo" src="img/farr-logo-120x71.png" target="_blank"
+                         alt="FARR Certified Halfway House"/>
+                  </a>
+                </p>
+              </div>
+              <div class="col-lg-3">
+                <p class="text-center">
+                  <a href="http://www.kbsoftwaresolutions.com"><img src="img/kb-logo-150x75.png" target="_blank" 
+                                                                    alt="KB Software Solutions Web Design"/></a>
                 </p>
               </div>
             </div>

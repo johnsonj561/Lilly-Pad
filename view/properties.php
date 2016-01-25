@@ -12,13 +12,25 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/modern-business.css" rel="stylesheet">
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Google Button Script -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
     <a name="top"></a>
+    <!-- Facebook Script -->
+    <?php require_once('../templates/facebook-google-like-script.html'); ?>
     <?php require_once('../templates/navbar.html'); ?>
     <!-- Page Content -->
     <div class="container">
-
+      <!-- Social Media Like Buttons -->
+      <div class="col-xs-12 social-media-like-buttons">
+        <!--Facebook Button -->
+        <div class="fb-like pull-right" data-href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+        <!-- Google Button -->
+        <div class="pull-right g-plus-button">
+          <div class="g-plusone"></div>
+        </div>
+      </div>
       <div class="">
         <img class="img-responsive common-bond-mssg" src="../img/common-bond-message.png" alt="Common bond of clean and sober life"/>
       </div>
@@ -37,56 +49,56 @@
             that centers a recovery community. Equipped with a full sized kitchen, living and dining area, and an outdoor patio enclosure, 
             the residents are immersed in company and restoration.</p>
           <a class="btn btn-primary" href="main-campus.php">View Images</a>
+        </div>
       </div>
-    </div>
-    <!-- /.row -->
-    <hr>
-    <!-- Project Two -->
-    <div class="row"><a name="executive"></a>
-      <div class="col-md-7">
-        <a href="portfolio-item.html">
-          <img class="img-responsive img-hover about-img" src="../img/executive-cover-700x400.jpg" alt="Premium Executive Sober House for Women
-                                                                                                        In Recovery">
-        </a>
+      <!-- /.row -->
+      <hr>
+      <!-- Project Two -->
+      <div class="row"><a name="executive"></a>
+        <div class="col-md-7">
+          <a href="portfolio-item.html">
+            <img class="img-responsive img-hover about-img" src="../img/executive-cover-700x400.jpg" alt="Premium Executive Sober House for Women
+                                                                                                          In Recovery">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h1 class="thumbnail-title">Executive Housing</h1>
+          <p>Walking distance from the Intracoastal and in close proximity to the beaches, the upscale executive housing is adorn with 
+            a recreational swimming pool, formal living and dining rooms, as well as a private bathroom attached to each bedroom. Just 
+            off Flagler Drive, the location of the executive house is nearby all of downtown Palm Beach.</p>
+          <a class="btn btn-primary" href="executive.php">View Images</a>
+        </div>
       </div>
-      <div class="col-md-5">
-        <h1 class="thumbnail-title">Executive Housing</h1>
-        <p>Walking distance from the Intracoastal and in close proximity to the beaches, the upscale executive housing is adorn with 
-          a recreational swimming pool, formal living and dining rooms, as well as a private bathroom attached to each bedroom. Just 
-          off Flagler Drive, the location of the executive house is nearby all of downtown Palm Beach.</p>
-        <a class="btn btn-primary" href="executive.php">View Images</a>
+      <!-- /.row -->
+      <hr>
+      <!-- Project Three -->
+      <div class="row"><a name="step-down"></a>
+        <div class="col-md-7">
+          <a href="portfolio-item.html">
+            <img class="img-responsive img-hover about-img" src="../img/stepdown-cover-700x400.jpg" alt="Step Down - 3 Quarter Living for Women in Sobriety">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h1 class="thumbnail-title">Step Down Housing</h1>
+          <p>For the women who have completed their 90-day commitment at Lilly Pad’s main or executive house, the step down housing provides
+            independence and personal accountability as they progress in their recovery. In the family-oriented suburb of Flamingo Park, 
+            the residents will be able to experience and enjoy their newly achieved sobriety.</p>
+          <a class="btn btn-primary" href="step-down.php">View Images</a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <div class="col-lg-12 row padding-top-40">
+        <div class="col-lg-2">
+          <p class="to-top pull-left"><a href="#top">Back To Top</a></p>
+        </div>
+        <div class="col-lg-8"></div>
+        <div class="col-lg-2">
+          <img class="img-responsive pull-right farr-logo" src="../img/farr-logo-120x71.png" alt="FARR Certified Halfway House"/>
+        </div>
+      </div> 
     </div>
-    </div>
-  <!-- /.row -->
-  <hr>
-  <!-- Project Three -->
-  <div class="row"><a name="step-down"></a>
-    <div class="col-md-7">
-      <a href="portfolio-item.html">
-        <img class="img-responsive img-hover about-img" src="../img/stepdown-cover-700x400.jpg" alt="Step Down - 3 Quarter Living for Women in Sobriety">
-      </a>
-    </div>
-    <div class="col-md-5">
-      <h1 class="thumbnail-title">Step Down Housing</h1>
-      <p>For the women who have completed their 90-day commitment at Lilly Pad’s main or executive house, the step down housing provides
-        independence and personal accountability as they progress in their recovery. In the family-oriented suburb of Flamingo Park, 
-        the residents will be able to experience and enjoy their newly achieved sobriety.</p>
-      <a class="btn btn-primary" href="step-down.php">View Images</a>
-  </div>
-  </div>
-<!-- /.row -->
-<div class="col-lg-12 row padding-top-40">
-  <div class="col-lg-2">
-    <p class="to-top pull-left"><a href="#top">Back To Top</a></p>
-  </div>
-  <div class="col-lg-8"></div>
-  <div class="col-lg-2">
-    <img class="img-responsive pull-right farr-logo" src="../img/farr-logo-120x71.png" alt="FARR Certified Halfway House"/>
-  </div>
-</div> 
-</div>
-<?php 
+    <?php 
 require_once('../templates/social-footer.html');
 require_once('../templates/footer.html'); ?>
-</body>
+  </body>
 </html>

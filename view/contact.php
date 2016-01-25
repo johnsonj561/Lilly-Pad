@@ -11,11 +11,24 @@
     <title>The Lilly Pad | Contact</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/modern-business.css" rel="stylesheet">
+    <!-- Google Button Script -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
+    <!-- Facebook Script -->
+    <?php require_once('../templates/facebook-google-like-script.html'); ?>
     <?php require_once('../templates/navbar.html'); ?>
     <a name="top"></a>
     <div class="container contact">
+      <!-- Social Media Like Buttons -->
+      <div class="col-xs-12 social-media-like-buttons">
+        <!--Facebook Button -->
+        <div class="fb-like pull-right" data-href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+        <!-- Google Button -->
+        <div class="pull-right g-plus-button">
+          <div class="g-plusone"></div>
+        </div>
+      </div>
       <div class="row">
         <div class="box">
           <div class="col-lg-12 contact-form">
