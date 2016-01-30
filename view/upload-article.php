@@ -7,8 +7,14 @@ $feedback = "";
 
 //if password was submitted - check if valid
 if(isset($_POST['password-submit'])){
-  $password = $_POST['password'];
-  if($password == ""){
+  $password = strip_tags($_POST['password']);
+  $salt = "X1K$6B8";
+  $password = crypt($password, $salt);
+    $password = trim($password);
+  $query = "SELECT pw FROM Article_authorization WHERE id = '1';";
+    $result = mysqli_query($link, $query);
+    $row = mysqli_fetch_array($result);
+  if($password == trim($row[0])){
     $authorization = true;
   }
   else{
@@ -57,7 +63,7 @@ if(isset($_POST['upload'])){
 
   //we are inserting into the database the path to the image - not the actual image's binary
   //another option is to create a blob db variable and store the image binary in the database
-  $query = "INSERT INTO ARTICLES (Date, Subject, Article, ImageSource) VALUES
+  $query = "INSERT INTO Articles (Date, Subject, Article, ImageSource) VALUES
             ('$date', '$subject', '$article', '$targetPath');";
   $result = mysqli_query($link, $query) or die(mysqli_error($link));
   if($result){

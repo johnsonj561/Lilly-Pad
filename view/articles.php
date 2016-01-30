@@ -3,13 +3,19 @@
 require_once('../php/connect.php');
 
 //Select all elements from DB
-$query = "SELECT * FROM ARTICLES;";
+$query = "SELECT * FROM Articles;";
 $result = mysqli_query($link, $query);
 $articleCount = mysqli_num_rows($result);
 
 //empty element to store article divs
 $articlesHTML = "";
 
+if(isset($_POST['chevron-left'])){
+  echo "LEFT";
+}
+if(isset($_POST['chevron-right'])){
+  echo "RIGHT";
+}
 //while there are rows to fetch
 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
   $date = $row['Date'];
@@ -21,7 +27,7 @@ while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
      <div class='col-lg-3'></div>
      <div class='col-lg-6'>
         <h1 class='thumbnail-title'>$subject</h1>
-        <div class='contact-info'>
+        <div class='article-border'>
            <img src='$imageSource' alt='$subject' class='img-responsive article-image'/>
            <p class='article-body'>$article</p>
         </div>
@@ -43,8 +49,9 @@ while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
     <link rel="icon" type="image/x-icon" href="../img/lily-pad-favicon-32x32.png" />
     <title>The Lilly Pad | Articles</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/modern-business.css" rel="stylesheet">
+
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/modern-business.css" rel="stylesheet">
     <!-- Google Button Script -->
     <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
@@ -69,12 +76,31 @@ while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
         </a>
       </div>
       <!-- ARTICLES BODY -->
-      
+
       <?php echo $articlesHTML; ?>
+
+      <form role='form' enctype='multipart/form-data' action='#' method = 'post'
+            onsubmit = ''>
+        <div class="col-lg-12 article-chevrons">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-3">
+            <button type='submit' name ='chevron-left' class='btn chevron-button pull-right'>
+              <i class="fa fa-chevron-circle-left fa-3x"></i>
+            </button>
+          </div>
+          <div class="col-lg-3">
+            <button type='submit' name ='chevron-right' class='btn chevron-button pull-left'>
+              <i class="fa fa-chevron-circle-right fa-3x"></i>
+            </button>
+          </div>
+          <div class="col-lg-3"></div>
+          <input type='hidden' name='currentPage' value='<?php echo $currentPage; ?>'>
+        </div>
+      </form>
 
     </div>
     <?php 
-require_once('../templates/social-footer.html');
-require_once('../templates/footer.html'); ?>
+    require_once('../templates/social-footer.html');
+    require_once('../templates/footer.html'); ?>
   </body>
 </html>
