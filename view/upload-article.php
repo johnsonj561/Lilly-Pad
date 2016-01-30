@@ -26,6 +26,7 @@ if(isset($_POST['upload'])){
   //variable to detect a successful image upload
   $image_success = 1;
   //extract testimonial data
+  $author = strip_tags($_POST['author']);
   $date = strip_tags($_POST['date']);
   $subject = strip_tags($_POST['subject']);
   $subject = mysqli_real_escape_string($link, $subject);
@@ -63,8 +64,8 @@ if(isset($_POST['upload'])){
 
   //we are inserting into the database the path to the image - not the actual image's binary
   //another option is to create a blob db variable and store the image binary in the database
-  $query = "INSERT INTO Articles (Date, Subject, Article, ImageSource) VALUES
-            ('$date', '$subject', '$article', '$targetPath');";
+  $query = "INSERT INTO Articles (Date, Subject, Author, Article, ImageSource) VALUES
+            ('$date', '$subject', '$author', '$article', '$targetPath');";
   $result = mysqli_query($link, $query) or die(mysqli_error($link));
   if($result){
     echo "Article successfully uploaded to Articles table<br>";

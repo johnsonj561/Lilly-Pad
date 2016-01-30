@@ -2,38 +2,62 @@
 //connect to database
 require_once('../php/connect.php');
 
-//Select all elements from DB
-$query = "SELECT * FROM Articles;";
-$result = mysqli_query($link, $query);
-$articleCount = mysqli_num_rows($result);
+$currentPage = 0;
+
+if(isset($_POST['chevron-left'])){
+  //get current page if available, or set to 0 as default
+  if(isset($_POST['currentPage'])){
+    $currentPage = $_POST['currentPage'];
+  }
+  $currentPage--;
+}
+if(isset($_POST['chevron-right'])){
+  //get current page if available, or set to 0 as a default
+  if(isset($_POST['currentPage'])){
+    $currentPage = $_POST['currentPage'];
+  }
+  $currentPage++;
+}
+
+if(!isset($articlesArray)){   //if articles array is not set, query DB and assign articles to array
+  //Select all elements from DB and store in PHP array
+  //If rows become increasingly large, we will need to implement more efficient algorithm!
+  $query = "SELECT * FROM Articles;";
+  $result = mysqli_query($link, $query);
+  $articlesArray = array();
+  while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
+    $articlesArray[] = $row;
+  }
+}
+
 
 //empty element to store article divs
 $articlesHTML = "";
 
-if(isset($_POST['chevron-left'])){
-  echo "LEFT";
-}
-if(isset($_POST['chevron-right'])){
-  echo "RIGHT";
-}
-//while there are rows to fetch
-while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
-  $date = $row['Date'];
-  $subject = $row['Subject'];
-  $imageSource = $row['ImageSource'];
-  $article = $row['Article'];
+//if there are articles to display
+if(count($articlesArray)){
+  //build article from $currentPage data
+  $date = $articlesArray[$currentPage]['Date'];
+  $subject = $articlesArray[$currentPage]['Subject'];
+  $imageSource = $articlesArray[$currentPage]['ImageSource'];
+  $article = $articlesArray[$currentPage]['Article'];
+  $author = $articlesArray[$currentPage]['Author'];
+
   $articlesHTML .=
     "<div class='col-lg-12'>
      <div class='col-lg-3'></div>
      <div class='col-lg-6'>
-        <h1 class='thumbnail-title'>$subject</h1>
-        <div class='article-border'>
-           <img src='$imageSource' alt='$subject' class='img-responsive article-image'/>
-           <p class='article-body'>$article</p>
-        </div>
-     </div>
-     <div class='col-lg-3'></div>
-     </div>";
+        <h2 class=''>$subject</h2>
+        <div class='article-border'>";
+  //only add an image if ImageSource != null
+  if($imageSource){
+    $articlesHTML .= "<img src='$imageSource' alt='$subject' class='img-responsive article-image'/>";
+  }
+  $articlesHTML .=
+    "<p class='article-body'>$article</p>
+      <p class='article-author'>$author</p>
+        <p class='article-date'>$date</p>
+      </div></div><div class='col-lg-3'></div></div>";
 }
 ?>
 
@@ -84,14 +108,22 @@ while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
         <div class="col-lg-12 article-chevrons">
           <div class="col-lg-3"></div>
           <div class="col-lg-3">
-            <button type='submit' name ='chevron-left' class='btn chevron-button pull-right'>
-              <i class="fa fa-chevron-circle-left fa-3x"></i>
-            </button>
+            <?php 
+if($currentPage > 0){
+  echo "<button type='submit' name ='chevron-left' class='btn chevron-button pull-right'>
+                        <i class='fa fa-chevron-circle-left fa-3x'></i>
+                      </button>";
+}
+            ?>
           </div>
           <div class="col-lg-3">
-            <button type='submit' name ='chevron-right' class='btn chevron-button pull-left'>
-              <i class="fa fa-chevron-circle-right fa-3x"></i>
-            </button>
+            <?php 
+if($currentPage < count($articlesArray) - 1){
+  echo "<button type='submit' name ='chevron-right' class='btn chevron-button pull-left'>
+                        <i class='fa fa-chevron-circle-right fa-3x'></i>
+                      </button>";
+}
+            ?>
           </div>
           <div class="col-lg-3"></div>
           <input type='hidden' name='currentPage' value='<?php echo $currentPage; ?>'>
@@ -100,7 +132,7 @@ while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
 
     </div>
     <?php 
-    require_once('../templates/social-footer.html');
-    require_once('../templates/footer.html'); ?>
+require_once('../templates/social-footer.html');
+require_once('../templates/footer.html'); ?>
   </body>
 </html>
