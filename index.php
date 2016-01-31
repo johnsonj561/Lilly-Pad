@@ -16,6 +16,8 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
+    <!-- Google Analytics -->
+    <?php include_once('templates/analyticstracking.php'); ?>
     <!-- Facebook Script -->
     <?php require_once('templates/facebook-google-like-script.html'); ?>
     <nav class="navbar navbar-inverse navbar-static-top" role="navigation">  <!--removed navbar-fixed-top -->

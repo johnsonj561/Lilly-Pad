@@ -17,6 +17,8 @@
   </head>
   <body>
     <a name="#top"></a>
+        <!-- Google Analytics -->
+    <?php include_once('../templates/analyticstracking.php'); ?>
     <!-- Facebook Script -->
     <?php require_once('../templates/facebook-google-like-script.html'); ?>
     <?php require_once('../templates/navbar.html'); ?>
