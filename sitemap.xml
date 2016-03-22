@@ -7,48 +7,58 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://thelillypadpb.com/</loc>
-  <lastmod>2015-11-29T16:11:30+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <loc>http://www.thelillypadpb.com/</loc>
+  <lastmod>2016-01-31T22:05:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://thelillypadpb.com/index.php</loc>
-  <lastmod>2015-11-29T16:11:30+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <loc>http://www.thelillypadpb.com/index.php</loc>
+  <lastmod>2016-01-31T22:05:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://thelillypadpb.com/view/properties.php</loc>
-  <lastmod>2015-11-29T16:11:30+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <loc>http://www.thelillypadpb.com/view/properties.php</loc>
+  <lastmod>2016-01-31T22:05:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://thelillypadpb.com/view/application.php</loc>
-  <lastmod>2015-11-29T16:11:30+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <loc>http://www.thelillypadpb.com/view/application.php</loc>
+  <lastmod>2016-01-31T22:05:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://thelillypadpb.com/view/contact.php</loc>
-  <lastmod>2015-11-29T16:11:30+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <loc>http://www.thelillypadpb.com/view/articles.php</loc>
+  <lastmod>2016-01-31T22:05:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://thelillypadpb.com/view/main-campus.php</loc>
-  <lastmod>2015-11-29T16:11:30+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <loc>http://www.thelillypadpb.com/view/contact.php</loc>
+  <lastmod>2016-01-31T22:05:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://thelillypadpb.com/view/executive.php</loc>
-  <lastmod>2015-11-29T16:11:30+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <loc>http://www.thelillypadpb.com/view/main-campus.php</loc>
+  <lastmod>2016-01-31T22:05:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://thelillypadpb.com/view/step-down.php</loc>
-  <lastmod>2015-11-29T16:11:30+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <loc>http://www.thelillypadpb.com/view/executive.php</loc>
+  <lastmod>2016-01-31T22:05:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://thelillypadpb.com/view/Lilly%20Pad%20Housing%20Application.pdf</loc>
-  <lastmod>2015-11-29T16:11:30+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <loc>http://www.thelillypadpb.com/view/step-down.php</loc>
+  <lastmod>2016-01-31T22:05:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.thelillypadpb.com/view/Lilly%20Pad%20Housing%20Application.pdf</loc>
+  <lastmod>2016-01-31T22:05:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.thelillypadpb.com/view/upload-article.php</loc>
+  <lastmod>2016-01-31T22:05:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 </urlset>
