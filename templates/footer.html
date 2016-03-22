@@ -3,7 +3,7 @@
     <div class="row">
       <div class=" row col-lg-12">
         <div class="col-lg-7">
-          <ul class="list-inline">
+          <ul class="list-inline text-center">
             <li>
               <a href="../index.php">Home</a>
             </li>
@@ -33,16 +33,28 @@
             </li>
             <li class="footer-menu-divider">&sdot;</li>
             <li>
+              <a href="https://plus.google.com/u/0/b/101325822073640161186/101325822073640161186/posts" target="_blank">Google+ Page</a>
+            </li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li>
               <a href="contact.php">Contact</a>
             </li>
 
           </ul>
-          <p class="copyright text-muted medium">Copyright &copy; The Lilly Pad West Palm Beach, All Rights Reserved</p>
+          <p class="copyright text-muted medium text-center">Copyright &copy; The Lilly Pad West Palm Beach, All Rights Reserved</p>
         </div>
-        <div class="col-lg-5">
-          <p class="pull-right">
-            <a href="http://www.kbsoftwaresolutions.com" target="_blank">
-              <img src="../img/kb-logo-150x75.png" alt="KB Software Solutions Web Design"/></a>
+        <div class="col-lg-2">
+          <p class="text-center">
+            <a href="http://farronline.org">
+              <img class="img-responsive pull-right farr-logo" src="/img/farr-logo-120x71.png" target="_blank"
+                   alt="FARR Certified Halfway House"/>
+            </a>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p class="text-center">
+            <a href="http://www.kbsoftwaresolutions.com"><img src="/img/kb-logo-150x75.png" target="_blank" 
+                                                              alt="KB Software Solutions Web Design"/></a>
           </p>
         </div>
       </div>
@@ -50,34 +62,5 @@
   </div>
 </footer>
 </div>
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script>
-  $(function(){
-    $('.fadein img:gt(0)').hide();
-    setInterval(function(){
-      $('.fadein :first-child').fadeOut()
-      .next('img').fadeIn()
-      .end().appendTo('.fadein');}, 
-                5000);
-  });
-  $(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-          return false;
-        }
-      }
-    });
-  }); 
-  $(document).ready(function(){
-    $('.dropdown').hover(function(){
-      $(this).find('ul').stop().slideToggle(300);
-    });
-  });
-</script>
+<script src="/js/jquery.js"></script>
+<script src="/js/lilly-pad.min.js"></script>
