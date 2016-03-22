@@ -9,18 +9,13 @@
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="icon" type="image/x-icon" href="img/lily-pad-favicon-32x32.png" />
     <title>The Lilly Pad | Healing Place For Recovery</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/modern-business.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- Google Button Script -->
+    <link href="css/lilly-pad-main.min.css" rel="stylesheet">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
-    <!-- Google Analytics -->
     <?php include_once('templates/analyticstracking.php'); ?>
-    <!-- Facebook Script -->
     <?php require_once('templates/facebook-google-like-script.html'); ?>
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">  <!--removed navbar-fixed-top -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -29,14 +24,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!--     <a class="navbar-brand" href="index.html">The Lilly Pad</a>   -->
           <img class="img-responsive top-logo" src="img/Lilly%20Pad%20logo%20v2%20300x100.png"
                alt="Lilly Pad WomensHalfway House Logo"/><a name="top"></a>
           <img class="img-responsive top-logo-mobile" src="img/Lilly-Pad-logo-v2-240x90.png"
                alt="Lilly Pad Womens Halfway House"/>
-          <!--      <a class="btn btn-lg btn-default btn-block help-button" href="#">1-800-256-1888</a>    -->
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li>
@@ -78,18 +70,13 @@
         </div>
       </div>
     </nav>
-
     <div class="container">
-      <!-- Social Media Like Buttons -->
       <div class="col-xs-12 social-media-like-buttons">
-        <!--Facebook Button -->
         <div class="fb-like pull-right" data-href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-        <!-- Google Button -->
         <div class="pull-right g-plus-button">
           <div class="g-plusone"></div>
         </div>
       </div>
-      <!-- slider -->
       <div class="col-xs-12">
         <div class="fadein">
           <img class = "img-responsive" src="img/slider-beach-spiritual-freedom-1100x450.jpg" 
@@ -104,16 +91,12 @@
                alt="Lilly Pad Womens Sober Housing West Palm Beach">
         </div>
       </div>
-      <!-- down-scroll-1 -->
       <div class="slogan">
-        <img class="img-responsive" src="img/lilly-pad-description-1200w-ni.png" alt=""/>
+        <img class="img-responsive" src="img/lilly-pad-description-1200w-ni.png" alt="The Lilly Pad - Palm Beach County Halfway House and Sober Living"/>
       </div>
       <div class="col-lg-12 text-center down-scroll-1">
         <p class="down-glyph"><a href="#home-page-1">&#65086;</a></p>
       </div>
-
-
-      <!-- ABOUT ROW 1 -->
       <div class="row home-page-1" name="about" id="about"><a name="home-page-1"></a>
         <div class="col-md-4 col-sm-6 hero-feature">
           <div class="thumbnail">
@@ -156,7 +139,6 @@
           </div>
         </div>
       </div>
-      <!-- ABOUT ROW 2 -->
       <div class="row home-page-1">
         <div class="col-md-1"></div>
         <div class="col-md-5 col-sm-6 hero-feature">
@@ -188,10 +170,7 @@
         </div>
         <div class="col-md-1"></div>
       </div>
-
       <p class="to-top pull-left"><a href="#top">Back To Top</a></p>
-
-
       <div class="col-lg-12 social-media-row">
         <div class="text-center">
           <h2>Share With a Friend</h2>
@@ -204,7 +183,6 @@
           </ul>
         </div>
       </div>
-
       <footer>
         <div class="container">
           <div class="row">
@@ -240,6 +218,10 @@
                   </li>
                   <li class="footer-menu-divider">&sdot;</li>
                   <li>
+                    <a href="https://plus.google.com/u/0/b/101325822073640161186/101325822073640161186/posts" target="_blank">Google+ Page</a>
+                  </li>
+                  <li class="footer-menu-divider">&sdot;</li>
+                  <li>
                     <a href="view/contact.php">Contact</a>
                   </li>
                 </ul>
@@ -265,35 +247,6 @@
       </footer>
     </div>
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-      $(function(){
-        $('.fadein img:gt(0)').hide();
-        setInterval(function(){
-          $('.fadein :first-child').fadeOut()
-          .next('img').fadeIn()
-          .end().appendTo('.fadein');}, 
-                    5000);
-      });
-      $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-          }
-        });
-      }); 
-      $(document).ready(function(){
-        $('.dropdown').hover(function(){
-          $(this).find('ul').stop().slideToggle(300);
-        });
-      });
-    </script>
+    <script src="js/lilly-pad.min.js"></script>
   </body>
 </html>
