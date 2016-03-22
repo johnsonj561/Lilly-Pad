@@ -9,26 +9,17 @@
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="icon" type="image/x-icon" href="../img/lily-pad-favicon-32x32.png" />
     <title>The Lilly Pad | Housing Application</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/modern-business.css" rel="stylesheet">
-    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- Google Button Script -->
+    <link href="/css/lilly-pad-main.min.css" rel="stylesheet">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
     <a name="#top"></a>
-        <!-- Google Analytics -->
     <?php include_once('../templates/analyticstracking.php'); ?>
-    <!-- Facebook Script -->
     <?php require_once('../templates/facebook-google-like-script.html'); ?>
     <?php require_once('../templates/navbar.html'); ?>
-    <!-- Page Content -->
     <div class="container">
-      <!-- Social Media Like Buttons -->
       <div class="col-xs-12 social-media-like-buttons">
-        <!--Facebook Button -->
         <div class="fb-like pull-right" data-href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-        <!-- Google Button -->
         <div class="pull-right g-plus-button">
           <div class="g-plusone"></div>
         </div>
@@ -39,11 +30,9 @@
         </div>
         <form role="form" action="../landing/application-landing.php" method = "post" 
               onsubmit = "return onApplicationSubmit()">
-          <!-- SUBJECT -->
           <div class="form-subject row">
             <div class="col-lg-2">
               <h3 class="form-header">Basic Information</h3>
-              <!-- 2 col spacer -->
             </div>
             <div class="col-lg-8 form-subject-border">
               <div class="col-lg-8">
@@ -88,7 +77,6 @@
                 <span class="glyphicon glyphicon-print"></span> Print Application</a>
             </div>
           </div>
-          <!-- SUBJECT -->
           <div class="form-subject row">
             <div class="col-lg-2">
               <h3 class="form-header">Emergency Contact</h3>
@@ -131,11 +119,9 @@
                 <input type="text" class="form-control" name = "emergencyEmail" id = "emergencyEmail"/>
               </div>
             </div>
-            <div class="col-lg-2">
-              <!-- 2 col spacer -->              
+            <div class="col-lg-2">         
             </div>
           </div>
-          <!-- SUBJECT -->
           <div class="form-subject row">
             <div class="col-lg-2">
               <h3 class="form-header">Drug &amp; Alcohol History</h3>
@@ -217,7 +203,6 @@
                 <label class="radio-label">No</label>
               </div>
               <div class="col-lg-6">
-                <!-- 6 col spacer -->
               </div>
               <div class="form-group col-lg-12">
                 <label>If Yes, Please Explain</label>
@@ -230,10 +215,8 @@
               </div>
             </div>
             <div class="col-lg-2">
-              <!-- 2 col spacer -->
             </div>
           </div>
-          <!-- SUBJECT -->
           <div class="form-subject row">
             <div class="col-lg-2">
               <h3 class="form-header">Psych &amp; Medical History</h3>
@@ -247,7 +230,6 @@
                 <label class="pull-left">Currently Taking Medications</label>
               </div>
               <div class="col-lg-6">
-                <!-- 6 col spacer -->
               </div>
               <div class="col-lg-3">
                 <input type="radio" class="form-group" name="takingMedicationRadio" value="yes" checked required/>
@@ -258,7 +240,6 @@
                 <label class="radio-label">No</label>
               </div>
               <div class="col-lg-6">
-                <!-- 6 col spacer -->
               </div>
               <div class="form-group col-lg-12">
                 <label class="pull-left">Prescribing Physican</label>
@@ -306,7 +287,6 @@
                 <label class="radio-label">No</label>
               </div>
               <div class="col-lg-6">
-                <!-- 6 col spacer -->
               </div>
               <div class="col-lg-12">
                 <label>If Not, Explain Why</label>
@@ -344,7 +324,6 @@
                 <input type="text" class="form-control" name = "oldWeight" id = "oldWeight" required/>
               </div>
               <div class="col-lg-3">
-                <!-- 3 col spacer -->
               </div>
               <div class="col-lg-12">
                 <label class="pull-left">Do You Believe You Have an Eating Disorder</label>
@@ -358,7 +337,6 @@
                 <label class="radio-label">No</label>
               </div>
               <div class="col-lg-6">
-                <!-- 6 col spacer -->
               </div>
               <div class="col-lg-12">
                 <label class="pull-left">Have History of Binging, Purging, Laxative, or Diuretic Use</label>
@@ -398,10 +376,8 @@
               </div>
             </div>
             <div class="col-lg-2">
-              <!-- 2 col spacer -->
             </div>
           </div>
-          <!-- SUBJECT -->
           <div class="form-subject row">
             <div class="col-lg-2">
               <h3 class="row form-header">Current Treatment</h3>
@@ -412,7 +388,6 @@
                 <input type="text" class="form-control" name = "currentFacilityName" id = "currentFacilityName"/>
               </div>
               <div class="form-group col-lg-3">
-                <!-- 2 col spacer -->
               </div>
               <div class="form-group col-lg-3">
                 <label class="pull-left">Expected DC Date</label>
@@ -432,10 +407,8 @@
               </div>
             </div>
             <div class="col-lg-2">
-              <!-- 2 col spacer -->
             </div>
           </div> 
-          <!-- SUBJECT -->
           <div class="form-subject row">
             <div class="col-lg-2">
               <h3 class="form-header">Education &amp; Employment</h3>
@@ -471,7 +444,6 @@
                 <label class="radio-label">No</label>
               </div>
               <div class="col-lg-6">
-                <!-- 6 col spacer -->
               </div>
               <div class="form-group col-lg-12">
                 <label>If Yes, Please Explain (Specify if Expected to Return to Work)</label>
@@ -483,10 +455,8 @@
               </div>
             </div>
             <div class="col-lg-2">
-              <!-- 2 col spacer -->
             </div>
           </div>
-          <!-- SUBJECT -->
           <div class="form-subject row">
             <div class="col-lg-2">
               <h3 class="row form-header">Legal Obligations</h3>
@@ -522,7 +492,6 @@
                 <label class="radio-label">No</label>
               </div>
               <div class="col-lg-6">
-                <!-- 6 col spacer -->
               </div>
               <div class="form-group col-lg-12">
                 <label>If Yes, Please Explain (Include Court Dates and Requirements)</label>
@@ -530,10 +499,8 @@
               </div>
             </div>
             <div class="col-lg-2">
-              <!-- 2 col spacer -->
             </div>
           </div>
-          <!-- SUBJECT -->
           <div class="form-subject row">
             <div class="col-lg-2">
               <h3 class="form-header">Insurance Information</h3>
@@ -565,26 +532,17 @@
               </div>
             </div>
             <div class="col-lg-2">
-              <!-- 2 col spacer -->
             </div>
           </div>
           <div class="text-center col-lg-12 submit-button">
-            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span> Submit Application</button>
+            <button type="submit" name="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span> Submit Application</button>
           </div>
         </form>
       </div>
-      <div class="col-lg-12 row padding-top-40">
-        <div class="col-lg-2">
-          <p class="to-top pull-left"><a href="#top">Back To Top</a></p>
-        </div>
-        <div class="col-lg-8"></div>
-        <div class="col-lg-2">
-          <img class="img-responsive pull-right farr-logo" src="../img/farr-logo-120x71.png" alt="FARR Certified Halfway House"/>
-        </div>
-      </div> 
+      <p class="to-top pull-left"><a href="#top">Back To Top</a></p>
     </div>
     <?php 
-require_once('../templates/social-footer.html');
-require_once('../templates/footer.html'); ?>
+    require_once('../templates/social-footer.html');
+    require_once('../templates/footer.html'); ?>
   </body>
 </html>

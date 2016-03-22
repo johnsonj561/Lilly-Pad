@@ -9,38 +9,27 @@
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="icon" type="image/x-icon" href="../img/lily-pad-favicon-32x32.png" />
     <title>The Lilly Pad | Properties</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/modern-business.css" rel="stylesheet">
-    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- Google Button Script -->
+    <link href="/css/lilly-pad-main.min.css" rel="stylesheet">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
     <a name="top"></a>
-        <!-- Google Analytics -->
     <?php include_once('../templates/analyticstracking.php'); ?>
-    <!-- Facebook Script -->
     <?php require_once('../templates/facebook-google-like-script.html'); ?>
     <?php require_once('../templates/navbar.html'); ?>
-    <!-- Page Content -->
     <div class="container">
-      <!-- Social Media Like Buttons -->
       <div class="col-xs-12 social-media-like-buttons">
-        <!--Facebook Button -->
         <div class="fb-like pull-right" data-href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-        <!-- Google Button -->
         <div class="pull-right g-plus-button">
           <div class="g-plusone"></div>
         </div>
       </div>
-      <div class="">
+      <div>
         <img class="img-responsive common-bond-mssg" src="../img/common-bond-message.png" alt="Common bond of clean and sober life"/>
       </div>
-
-      <!-- Project One -->
       <div class="row"><a name="main-campus"></a>
         <div class="col-md-7">
-          <a href="portfolio-item.html">
+          <a href="main-campus.php">
             <img class="img-responsive img-hover about-img" src="../img/main-campus-cover-700x400.jpg" alt="Main Campus Sober Living Halfway House West
                                                                                                             Palm Beach Florida">
           </a>
@@ -53,12 +42,10 @@
           <a class="btn btn-primary" href="main-campus.php">View Images</a>
         </div>
       </div>
-      <!-- /.row -->
       <hr>
-      <!-- Project Two -->
       <div class="row"><a name="executive"></a>
         <div class="col-md-7">
-          <a href="portfolio-item.html">
+          <a href="executive.php">
             <img class="img-responsive img-hover about-img" src="../img/executive-cover-700x400.jpg" alt="Premium Executive Sober House for Women
                                                                                                           In Recovery">
           </a>
@@ -71,12 +58,10 @@
           <a class="btn btn-primary" href="executive.php">View Images</a>
         </div>
       </div>
-      <!-- /.row -->
       <hr>
-      <!-- Project Three -->
       <div class="row"><a name="step-down"></a>
         <div class="col-md-7">
-          <a href="portfolio-item.html">
+          <a href="step-down.php">
             <img class="img-responsive img-hover about-img" src="../img/stepdown-cover-700x400.jpg" alt="Step Down - 3 Quarter Living for Women in Sobriety">
           </a>
         </div>
@@ -88,16 +73,7 @@
           <a class="btn btn-primary" href="step-down.php">View Images</a>
         </div>
       </div>
-      <!-- /.row -->
-      <div class="col-lg-12 row padding-top-40">
-        <div class="col-lg-2">
-          <p class="to-top pull-left"><a href="#top">Back To Top</a></p>
-        </div>
-        <div class="col-lg-8"></div>
-        <div class="col-lg-2">
-          <img class="img-responsive pull-right farr-logo" src="../img/farr-logo-120x71.png" alt="FARR Certified Halfway House"/>
-        </div>
-      </div> 
+      <p class="to-top pull-left"><a href="#top">Back To Top</a></p>
     </div>
     <?php 
 require_once('../templates/social-footer.html');

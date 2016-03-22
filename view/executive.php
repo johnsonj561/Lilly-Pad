@@ -9,16 +9,12 @@
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="icon" type="image/x-icon" href="../img/lily-pad-favicon-32x32.png" />
     <title>The Lilly Pad | Executive Gallery</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/modern-business.css" rel="stylesheet">
-    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/lilly-pad-main.min.css" rel="stylesheet">
   </head>
   <body>
     <a name="top"></a>
-        <!-- Google Analytics -->
     <?php include_once('../templates/analyticstracking.php'); ?>
     <?php require_once('../templates/navbar.html'); ?>
-    <!-- Page Content -->
     <div class="container">
       <div class="row contact">
         <div class="col-lg-12 text-center">
@@ -26,7 +22,6 @@
           <div class="col-lg-2"></div>
           <div class="col-lg-8">
             <div id="carousel-example-generic" class="carousel slide">
-              <!-- Indicators -->
               <ol class="carousel-indicators hidden-xs">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -40,7 +35,6 @@
                 <li data-target="#carousel-example-generic" data-slide-to="9"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="10"></li>
               </ol>
-              <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
                   <img class="img-responsive img-full" src="../img/executive/executive-1-1000x500.jpg" alt="Executive Halfway House - Dining Area">
@@ -86,10 +80,9 @@
     <?php 
     require_once('../templates/social-footer.html');
     require_once('../templates/footer.html'); ?>
-    <!-- Script to Activate the Carousel -->
     <script>
       $('.carousel').carousel({
-        interval: 4000 //changes the speed
+        interval: 4000 
       })
     </script>
   </body>
