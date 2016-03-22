@@ -1,14 +1,14 @@
 <?php
-$name = strip_tags($_POST['name']);
-$email = strip_tags($_POST['email']);
-$phoneNumber = strip_tags($_POST['phone']);
-$message = strip_tags($_POST['message']);
-$headers = "From: www.wpblillypad.com\r\n";
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-
-$emailMessage = 
-  "<table class='form-email-message'>
+if(isset($_POST['submit'])){
+  $name = strip_tags($_POST['name']);
+  $email = strip_tags($_POST['email']);
+  $phoneNumber = strip_tags($_POST['phone']);
+  $message = strip_tags($_POST['message']);
+  $headers = "From: www.wpblillypad.com\r\n";
+  $headers .= "MIME-Version: 1.0\r\n";
+  $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+  $emailMessage = 
+    "<table class='form-email-message'>
       <tr>
         <td>Lilly Pad Messaging Center</td>
       </tr>
@@ -25,29 +25,27 @@ $emailMessage =
         <td>Email: $email</td>
       </tr>
     </table>";
+  $result = mail("sivia@thelillypad.org", "Lilly Pad Messaging Center", $emailMessage, $headers);
+}
 
-$result = mail("sivia@thelillypad.org", "Lilly Pad Messaging Center", $emailMessage, $headers);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="KB Software Solutions - Thank you for your message, we appreciate your business.">
-    <meta name="author" content="KB Software Solutions">
+    <meta name="description" content="The Lilly Pad - Thank you for your message">
+    <meta name="author" content="The Lilly Pad">
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
-    <link rel="icon" type="image/x-icon" href="../img/kb-favicon.png" />
-    <title>KB Software Solutions | Message Received</title>
+    <link rel="icon" type="image/x-icon" href="img/lily-pad-favicon-32x32.png" />
+    <title>The Lilly Pad | Message Received</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/modern-business.css" rel="stylesheet">
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">  <!--removed navbar-fixed-top -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -91,6 +89,9 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Messaging Center", $emailMess
               <a href="../view/application.php">Application</a>
             </li>
             <li>
+              <a href="../view/articles.php">Articles</a>
+            </li>
+            <li>
               <a href="https://lillypad.gocashbox.com/" target="_blank">Pay Online</a>
             </li>
             <li>
@@ -118,13 +119,12 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Messaging Center", $emailMess
       <hr class="paragraph-divider">
     </div>
   </body>
-
   <footer>
     <div class="container">
       <div class="row">
         <div class=" row col-lg-12">
           <div class="col-lg-7">
-            <ul class="list-inline">
+            <ul class="list-inline text-center">
               <li>
                 <a href="../index.php">Home</a>
               </li>
@@ -142,23 +142,41 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Messaging Center", $emailMess
               </li>
               <li class="footer-menu-divider">&sdot;</li>
               <li>
+                <a href="view/articles.php">Articles</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
                 <a target="_blank" href="https://lillypad.gocashbox.com/">Pay Online</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" target="_blank">Facebook Page</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="https://plus.google.com/u/0/b/101325822073640161186/101325822073640161186/posts" target="_blank">Google+ Page</a>
               </li>
               <li class="footer-menu-divider">&sdot;</li>
               <li>
                 <a href="../view/contact.php">Contact</a>
               </li>
-              <li class="footer-menu-divider">&sdot;</li>
-
             </ul>
             <p class="copyright text-muted medium">Copyright &copy; The Lilly Pad West Palm Beach, All Rights Reserved</p>
           </div>
-          <div class="col-lg-5">
-            <p class="pull-right kb-footer-text">
-              <img src="../img/kb-logo-v3-75x60.png" alt="KB Software Solutions Web Design">
-              <a href="http://www.kbsoftwaresolutions.com" target="_blank">Website Development by KB Software Solutions</a>
-            </p>
-          </div>
+          <div class="col-lg-2">
+                <p class="text-center">
+                  <a href="http://farronline.org">
+                    <img class="img-responsive pull-right farr-logo" src="../img/farr-logo-120x71.png" target="_blank"
+                         alt="FARR Certified Halfway House"/>
+                  </a>
+                </p>
+              </div>
+              <div class="col-lg-3">
+                <p class="text-center">
+                  <a href="http://www.kbsoftwaresolutions.com"><img src="../img/kb-logo-150x75.png" target="_blank" 
+                                                                    alt="KB Software Solutions Web Design"/></a>
+                </p>
+              </div>
         </div>
       </div>
     </div>

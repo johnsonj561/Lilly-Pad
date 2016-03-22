@@ -183,7 +183,9 @@ $emailMessage =
     <tr><td>Primary Insured Relationship: $primaryInsuredRelationship</td></tr>
     </table>
     <br>";
-$result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailMessage, $headers);
+if(isset($_POST['submit'])){
+  $result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailMessage, $headers);
+}
 ?>
 
 <!DOCTYPE html>
@@ -203,7 +205,7 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailM
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">  <!--removed navbar-fixed-top -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -215,9 +217,7 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailM
           <!--     <a class="navbar-brand" href="index.html">The Lilly Pad</a>   -->
           <img class="img-responsive top-logo" src="../img/Lilly%20Pad%20logo%20v2%20300x100.png"/><a name="top"></a>
           <img class="img-responsive top-logo-mobile" src="../img/Lilly-Pad-logo-v2-240x90.png"/>
-          <!--      <a class="btn btn-lg btn-default btn-block help-button" href="#">1-800-256-1888</a>    -->
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li>
@@ -245,6 +245,9 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailM
             </li>
             <li>
               <a href="../view/application.php">Application</a>
+            </li>
+            <li>
+              <a href="../view/articles.php">Articles</a>
             </li>
             <li>
               <a href="https://lillypad.gocashbox.com/" target="_blank">Pay Online</a>
@@ -279,7 +282,7 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailM
       <div class="row">
         <div class=" row col-lg-12">
           <div class="col-lg-7">
-            <ul class="list-inline">
+            <ul class="list-inline text-center">
               <li>
                 <a href="../index.php">Home</a>
               </li>
@@ -297,7 +300,19 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailM
               </li>
               <li class="footer-menu-divider">&sdot;</li>
               <li>
+                <a href="view/articles.php">Articles</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
                 <a target="_blank" href="https://lillypad.gocashbox.com/">Pay Online</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" target="_blank">Facebook Page</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="https://plus.google.com/u/0/b/101325822073640161186/101325822073640161186/posts" target="_blank">Google+ Page</a>
               </li>
               <li class="footer-menu-divider">&sdot;</li>
               <li>
@@ -306,12 +321,20 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailM
               <li class="footer-menu-divider">&sdot;</li>
 
             </ul>
-            <p class="copyright text-muted medium">Copyright &copy; The Lilly Pad West Palm Beach, All Rights Reserved</p>
+            <p class="copyright text-muted medium text-center">Copyright &copy; The Lilly Pad West Palm Beach, All Rights Reserved</p>
           </div>
-          <div class="col-lg-5">
-            <p class="pull-right kb-footer-text">
-              <img src="../img/kb-logo-v3-75x60.png" alt="KB Software Solutions Web Design">
-              <a href="http://www.kbsoftwaresolutions.com" target="_blank">Website Development by KB Software Solutions</a>
+          <div class="col-lg-2">
+            <p class="text-center">
+              <a href="http://farronline.org">
+                <img class="img-responsive pull-right farr-logo" src="../img/farr-logo-120x71.png" target="_blank"
+                     alt="FARR Certified Halfway House"/>
+              </a>
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <p class="text-center">
+              <a href="http://www.kbsoftwaresolutions.com"><img src="../img/kb-logo-150x75.png" target="_blank" 
+                                                                alt="KB Software Solutions Web Design"/></a>
             </p>
           </div>
         </div>
@@ -321,14 +344,6 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailM
   <script src="../js/jquery.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script>
-    $(function(){
-      $('.fadein img:gt(0)').hide();
-      setInterval(function(){
-        $('.fadein :first-child').fadeOut()
-        .next('img').fadeIn()
-        .end().appendTo('.fadein');}, 
-                  5000);
-    });
     $(function() {
       $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
