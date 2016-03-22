@@ -27,17 +27,26 @@ li{
   font-family: "europa";
   margin-bottom: 25px;
 }
-.article-date, .article-author{
-  font-family: Coronetscript, cursive;
-  font-size: 13px;
+.article-date{
+  font-size: 16px;
 }
-
+.article-author{
+  font-family: Coronetscript, cursive;
+  font-weight: 600;
+  font-size: 16px;
+}
+.article-author-div{
+  padding-bottom: 10px;
+}
 /* Page Spacing */
 body {
   padding-top: 40px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 .header-spacing{
-  margin-bottom: 40px;
+  margin-bottom: 5px;
+}
+.header-spacing-2{
+  margin-bottom: 30px;
 }
 .photo-description{
   padding-top: 15px;
@@ -61,6 +70,7 @@ body {
 .padding-top-40{
   padding-top: 40px;
 }
+
 
 /* Buttons */
 .btn-default{
@@ -87,14 +97,19 @@ body {
   color: #F6508F;
   text-decoration: none;
 }
-.article-chevrons{
+.upload-article-div{
   margin-top: 10px;
+}
+.article-chevrons{
+  margin: 10px 0px 40px 0px;
 }
 .chevron-button{
   background: transparent;
   border: transparent;
 }
-
+.fa-chevron-circle-left, .fa-chevron-circle-right{
+  color: #F6508F;
+}
 
 /* Borders */
 .pink-border{
@@ -136,19 +151,19 @@ body {
   font-size: 18px;
   padding-right: 5px;
 }
-.glyphicon-send{
+.glyphicon-send, .glyphicon-earphone, .glyphicon-upload{
   font-size: 18px;
   padding-right: 5px;
 }
 <!-- 
 .down-glyph-div>p>a{
-font-size:80px;
-color: #F6508F;
+  font-size:80px;
+  color: #F6508F;
 }
 .down-glyph-div>p>a:hover{
-font-size:90px;
-color: #72FAFB;
-text-decoration: none;
+  font-size:90px;
+  color: #72FAFB;
+  text-decoration: none;
 }    -->
 
 
@@ -492,6 +507,9 @@ row.social-media ul {
   .wpb-map-mobile{
     display: none;
   }
+  .need-help-div, .upload-button-div{
+    margin-top: 60px;
+  }
 }
 
 @media(max-width:650px){
@@ -516,10 +534,9 @@ row.social-media ul {
   .home-page-1{
     margin-top: 30px;
   }
-  .spiritual-tools-mssg, .common-bond-mssg{
+  .spiritual-tools-mssg, .common-bond-mssg, .upload-button-div{
     display: none;
   }
-
 }
 
 @media(max-width:500px){
