@@ -1,0 +1,11 @@
+User-agent: *
+
+Disallow: /css/
+Disallow: /font-awesome/
+Disallow: /fonts/
+Disallow: /img/
+Disallow: /js/
+Disallow: /landing/
+Disallow: /templates/
+Disallow: /wordpress/
+Disalllow: /php/
