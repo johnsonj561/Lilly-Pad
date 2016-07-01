@@ -83,6 +83,7 @@ function GetImageExtension($imagetype){
     <meta name="ROBOTS" content="INDEX, NOFOLLOW">
     <link rel="icon" type="image/x-icon" href="../img/lily-pad-favicon-32x32.png" />
     <title>The Lilly Pad | Articles</title>
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">    
     <link href="/css/lilly-pad-main.min.css" rel="stylesheet">
   </head>
   <body>
@@ -90,11 +91,11 @@ function GetImageExtension($imagetype){
     <!-- Page Content -->
     <div class="container">
       <?php if($authorization){require_once('../templates/upload-article-form.html');}
-      else{require_once('../templates/password-required.html');}?>
+else{require_once('../templates/password-required.html');}?>
     </div>
     </div>
   <?php 
-  require_once('../templates/social-footer.html');
-  require_once('../templates/footer.html'); ?>
+require_once('../templates/social-footer.html');
+require_once('../templates/footer.html'); ?>
   </body>
 </html>

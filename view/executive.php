@@ -9,6 +9,7 @@
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="icon" type="image/x-icon" href="../img/lily-pad-favicon-32x32.png" />
     <title>The Lilly Pad | Executive Gallery</title>
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">    
     <link href="/css/lilly-pad-main.min.css" rel="stylesheet">
   </head>
   <body>
@@ -78,8 +79,8 @@
       </div>
     </div> 
     <?php 
-    require_once('../templates/social-footer.html');
-    require_once('../templates/footer.html'); ?>
+require_once('../templates/social-footer.html');
+require_once('../templates/footer.html'); ?>
     <script>
       $('.carousel').carousel({
         interval: 4000 

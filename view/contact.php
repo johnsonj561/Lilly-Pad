@@ -9,6 +9,7 @@
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="icon" type="image/x-icon" href="../img/lily-pad-favicon-32x32.png" />
     <title>The Lilly Pad | Contact</title>
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">    
     <link href="/css/lilly-pad-main.min.css" rel="stylesheet">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
