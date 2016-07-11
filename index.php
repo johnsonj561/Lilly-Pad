@@ -9,16 +9,14 @@
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="icon" type="image/x-icon" href="img/lily-pad-favicon-32x32.png" />
     <title>The Lilly Pad | Healing Place For Recovery</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/modern-business.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- Google Button Script -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">    
+    <link href="css/lilly-pad-main.min.css" rel="stylesheet">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
-    <!-- Facebook Script -->
+    <?php include_once('templates/analyticstracking.php'); ?>
     <?php require_once('templates/facebook-google-like-script.html'); ?>
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">  <!--removed navbar-fixed-top -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -27,14 +25,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!--     <a class="navbar-brand" href="index.html">The Lilly Pad</a>   -->
           <img class="img-responsive top-logo" src="img/Lilly%20Pad%20logo%20v2%20300x100.png"
                alt="Lilly Pad WomensHalfway House Logo"/><a name="top"></a>
           <img class="img-responsive top-logo-mobile" src="img/Lilly-Pad-logo-v2-240x90.png"
                alt="Lilly Pad Womens Halfway House"/>
-          <!--      <a class="btn btn-lg btn-default btn-block help-button" href="#">1-800-256-1888</a>    -->
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li>
@@ -61,6 +56,9 @@
               </ul>
             </li>
             <li>
+              <a href="view/saint-augustine.php">St Augustine</a>
+            </li>
+            <li>
               <a href="view/application.php">Application</a>
             </li>
             <li>
@@ -76,18 +74,13 @@
         </div>
       </div>
     </nav>
-
     <div class="container">
-      <!-- Social Media Like Buttons -->
       <div class="col-xs-12 social-media-like-buttons">
-        <!--Facebook Button -->
         <div class="fb-like pull-right" data-href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-        <!-- Google Button -->
         <div class="pull-right g-plus-button">
           <div class="g-plusone"></div>
         </div>
       </div>
-      <!-- slider -->
       <div class="col-xs-12">
         <div class="fadein">
           <img class = "img-responsive" src="img/slider-beach-spiritual-freedom-1100x450.jpg" 
@@ -102,16 +95,12 @@
                alt="Lilly Pad Womens Sober Housing West Palm Beach">
         </div>
       </div>
-      <!-- down-scroll-1 -->
       <div class="slogan">
-        <img class="img-responsive" src="img/lilly-pad-description-1200w-ni.png" alt=""/>
+        <img class="img-responsive" src="img/lilly-pad-description-1200w-ni.png" alt="The Lilly Pad - Palm Beach County Halfway House and Sober Living"/>
       </div>
       <div class="col-lg-12 text-center down-scroll-1">
         <p class="down-glyph"><a href="#home-page-1">&#65086;</a></p>
       </div>
-
-
-      <!-- ABOUT ROW 1 -->
       <div class="row home-page-1" name="about" id="about"><a name="home-page-1"></a>
         <div class="col-md-4 col-sm-6 hero-feature">
           <div class="thumbnail">
@@ -154,7 +143,6 @@
           </div>
         </div>
       </div>
-      <!-- ABOUT ROW 2 -->
       <div class="row home-page-1">
         <div class="col-md-1"></div>
         <div class="col-md-5 col-sm-6 hero-feature">
@@ -186,13 +174,9 @@
         </div>
         <div class="col-md-1"></div>
       </div>
-
       <p class="to-top pull-left"><a href="#top">Back To Top</a></p>
-
-
       <div class="col-lg-12 social-media-row">
         <div class="text-center">
-          <h2>Share With a Friend</h2>
           <ul class="share-buttons">
             <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.thelillypadpb.com&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="img/social-media/Facebook.png" alt="facebook-logo"></a></li>
             <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.thelillypadpb.com&text=:%20http%3A%2F%2Fwww.thelillypadpb.com" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="img/social-media/Twitter.png" alt="twitter-logo"></a></li>
@@ -202,96 +186,68 @@
           </ul>
         </div>
       </div>
+    </div>
 
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class=" row col-lg-12">
-              <div class="col-lg-7">
-                <ul class="list-inline text-center">
-                  <li>
-                    <a href="index.php">Home</a>
-                  </li>
-                  <li class="footer-menu-divider">&sdot;</li>
-                  <li>
-                    <a href="#home-page-1">About</a>
-                  </li>
-                  <li class="footer-menu-divider">&sdot;</li>
-                  <li>
-                    <a href="view/properties.php">Properties</a>
-                  </li>
-                  <li class="footer-menu-divider">&sdot;</li>
-                  <li>
-                    <a href="view/application.php">Application</a>
-                  </li>
-                  <li class="footer-menu-divider">&sdot;</li>
-                  <li>
-                    <a href="view/articles.php">Articles</a>
-                  </li>
-                  <li class="footer-menu-divider">&sdot;</li>
-                  <li>
-                    <a target="_blank" href="https://lillypad.gocashbox.com/">Pay Online</a>
-                  </li>
-                  <li class="footer-menu-divider">&sdot;</li>
-                  <li>
-                    <a href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" target="_blank">Facebook Page</a>
-                  </li>
-                  <li class="footer-menu-divider">&sdot;</li>
-                  <li>
-                    <a href="view/contact.php">Contact</a>
-                  </li>
-                </ul>
-                <p class="copyright text-muted medium text-center">Copyright &copy; The Lilly Pad West Palm Beach, All Rights Reserved</p>
-              </div>
-              <div class="col-lg-2">
-                <p class="text-center">
-                  <a href="http://farronline.org">
-                    <img class="img-responsive pull-right farr-logo" src="img/farr-logo-120x71.png" target="_blank"
-                         alt="FARR Certified Halfway House"/>
-                  </a>
-                </p>
-              </div>
-              <div class="col-lg-3">
-                <p class="text-center">
-                  <a href="http://www.kbsoftwaresolutions.com"><img src="img/kb-logo-150x75.png" target="_blank" 
-                                                                    alt="KB Software Solutions Web Design"/></a>
-                </p>
-              </div>
+    <footer>
+      <div class="container">
+        <div class="row col-lg-12">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-4 footer-menu">
+            <h3 class="text-center">Site Menu</h3>
+            <div class="col-sm-6 text-center">
+              <a href="index.php">Home</a>
+              <a href="#home-page-1">About</a>
+              <a href="view/properties.php">Properties</a>
+              <a href="view/saint-augustine.php">St Augustine</a>
+              <a href="view/application.php">Application</a>
+            </div>
+            <div class="col-sm-6 text-center">
+              <a href="view/articles.php">Articles</a>
+              <a target="_blank" href="https://lillypad.gocashbox.com/">Pay Online</a>
+              <a href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" target="_blank">Facebook Page</a>
+              <a href="https://plus.google.com/u/0/b/101325822073640161186/101325822073640161186/posts" target="_blank">Google+ Page</a>
             </div>
           </div>
+          <div class="col-sm-3 farr-menu">
+            <h3 class="text-center">FARR Certified</h3>
+            <div class="row">
+              <a href="http://farronline.org">
+                <img class="img-responsive img-center" src="img/farr-logo-120x71.png" target="_blank"
+                     alt="FARR Certified Halfway House"/>
+              </a>
+            </div>
+            <div class="text-center row">
+              <a href="http://farronline.org/standards-ethics/ethics/code-of-ethics-2/" target="_blank">Code Of Ethics</a>
+              <a href="http://farronline.org/standards-ethics/ethics/file-a-grievance-2/" target="_blank">Greivance Procedure</a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <h3 class="text-center">Powered By</h3>
+            <p class="text-center">
+              <a href="http://www.kbsoftwaresolutions.com"><img src="img/kb-logo-150x75.png" target="_blank" 
+                                                                alt="KB Software Solutions Web Design"/></a>
+            </p>
+          </div>
+          <div class="col-sm-1"></div>
         </div>
-      </footer>
+      </div>
+      <div class="row col-lg-12 footer-bottom-row">
+        <div class="col-md-4 text-center">
+          <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+15617581011" class="footer-call-now">Call Today 561-758-1011</a>
+        </div>
+        <div class="col-md-4 text-center">
+          <p class="copyright text-muted medium text-center">&copy; The Lilly Pad West Palm Beach</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" target="_blank">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i></a></span>
+        <a href="https://plus.google.com/u/0/b/101325822073640161186/101325822073640161186/posts" target="_blank">
+          <i class="fa fa-google-plus-square" aria-hidden="true"></i></a></span>
+      <a href="view/contact.php"><i class="fa fa-envelope" aria-hidden="true"></i></a></span>
     </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-      $(function(){
-        $('.fadein img:gt(0)').hide();
-        setInterval(function(){
-          $('.fadein :first-child').fadeOut()
-          .next('img').fadeIn()
-          .end().appendTo('.fadein');}, 
-                    5000);
-      });
-      $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-          }
-        });
-      }); 
-      $(document).ready(function(){
-        $('.dropdown').hover(function(){
-          $(this).find('ul').stop().slideToggle(300);
-        });
-      });
-    </script>
-  </body>
+  </div>
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/lilly-pad.min.js"></script>
+</body>
 </html>

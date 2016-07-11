@@ -9,12 +9,13 @@
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="icon" type="image/x-icon" href="../img/lily-pad-favicon-32x32.png" />
     <title>The Lilly Pad | Step Down Housing</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/modern-business.css" rel="stylesheet">
-    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">    
+    <link href="/css/lilly-pad-main.min.css" rel="stylesheet">
   </head>
   <body>
     <a name="top"></a>
+    <!-- Google Analytics -->
+    <?php include_once('../templates/analyticstracking.php'); ?>
     <?php require_once('../templates/navbar.html'); ?>
     <!-- Page Content -->
     <div class="container">
@@ -58,8 +59,8 @@
       </div>
     </div> 
     <?php 
-    require_once('../templates/social-footer.html');
-    require_once('../templates/footer.html'); ?>
+require_once('../templates/social-footer.html');
+require_once('../templates/footer.html'); ?>
     <!-- Script to Activate the Carousel -->
     <script>
       $('.carousel').carousel({

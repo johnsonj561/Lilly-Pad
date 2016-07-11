@@ -9,22 +9,18 @@
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="icon" type="image/x-icon" href="../img/lily-pad-favicon-32x32.png" />
     <title>The Lilly Pad | Contact</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/modern-business.css" rel="stylesheet">
-    <!-- Google Button Script -->
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">    
+    <link href="/css/lilly-pad-main.min.css" rel="stylesheet">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
-    <!-- Facebook Script -->
+    <?php include_once('../templates/analyticstracking.php'); ?>
     <?php require_once('../templates/facebook-google-like-script.html'); ?>
     <?php require_once('../templates/navbar.html'); ?>
     <a name="top"></a>
     <div class="container contact">
-      <!-- Social Media Like Buttons -->
       <div class="col-xs-12 social-media-like-buttons">
-        <!--Facebook Button -->
         <div class="fb-like pull-right" data-href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-        <!-- Google Button -->
         <div class="pull-right g-plus-button">
           <div class="g-plusone"></div>
         </div>
@@ -32,7 +28,8 @@
       <div class="row">
         <div class="box">
           <div class="col-lg-12 contact-form">
-            <h2 class="intro-text text-center header-spacing">Staff is Available 24/7 to Anyone Reaching Out For Help</h2>
+            <h1 class="intro-text text-center header-spacing">Staff is Available 24/7 to Anyone Seeking Drug or Alcohol Treatment</h1>
+            <h3 class="intro-text text-center header-spacing-2">The Lilly Pad Offers Assistance With Detoxification, Inpatient/Outpatient Treatment, and Sober Living</h3>
             <div class="col-lg-12">
               <form role="form" action="../landing/message-landing.php" method = "post"
                     onsubmit = "return onContactSubmit()">
@@ -58,7 +55,7 @@
                   </div><br>
                   <div class="row form-group col-lg-9 text-center send-message-div">
                     <input type="hidden" name="save" value="contact">
-                    <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    <button type="submit" name="submit" class="btn btn-primary btn-large">Send Message</button>
                   </div>
                 </div>
               </form>

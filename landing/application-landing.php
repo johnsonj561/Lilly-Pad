@@ -12,46 +12,29 @@ $clientEmail = $_POST['clientEmail'];
 //Emergency Contact
 $emergencyContact = $_POST['emergencyContact'];
 $emergencyRelationship = $_POST['emergencyRelationship'];
-$emergencyStreet = $_POST['emergencyStreet'];
-$emergencyApt = $_POST['emergencyApt'];
-$emergencyCity = $_POST['emergencyCity']; 
-$emergencyState = $_POST['emergencyState'];
-$emergencyZip = $_POST['emergencyZip'];
 $emergencyPhone = $_POST['emergencyPhone'];
 $emergencyEmail = $_POST['emergencyEmail'];
 //Drug/Alcohol History
 $primarySubstance = $_POST['primarySubstance'];
 $primaryDate = $_POST['primaryDate'];
-$primaryFrequency = $_POST['primaryFrequency'];
 $primaryPeriod = $_POST['primaryPeriod'];
 $secondarySubstance = $_POST['secondarySubstance'];
-$secondaryDate = $_POST['secondaryDate'];
-$secondaryFrequency = $_POST['secondaryFrequency'];
-$secondaryPeriod = $_POST['secondaryPeriod'];
 $familyAddiction = $_POST['familyAddiction'];
 $familyAddictionMessage = $_POST['familyAddictionMessage'];
-$abuseSummary = $_POST['abuseSummaryMessage'];
 //Psych and Medical History
 $allergies = $_POST['allergies'];
-$takingMedications = $_POST['takingMedicationRadio'];
-$prescribingPhysician = $_POST['prescriber'];
 $currentMedications = $_POST['currentMedicationList'];
-$inTreatment = $_POST['inTreatmentRadio'];
-$currentFacility = $_POST['currentFacility'];
 $priorFacilities = $_POST['priorFacilityList'];
-$permissionToContactFacility = $_POST['canContactFacilities'];
-$permissionToContactExplanation = $_POST['whyNoContactFacility'];
 $hadPsychTreatment = $_POST['hadPsychTreatment'];
 $psychHistoryMessage = $_POST['psychHistoryMessage'];
-$height = $_POST['height'];
-$weight = $_POST['weight'];
-$oldWeight = $_POST['oldWeight'];
 $haveEatingDisorder = $_POST['haveEatingDisorder'];
 $eatingDisorderHistory = $_POST['eatingDisorderHistory'];
 $eatingDisorderHistoryMessage = $_POST['eatingDisorderHistoryMessage'];
 $treatedEatingDisorder = $_POST['treatedEatingDisorder'];
 $treatedEatingDisorderMessage = $_POST['treatedEatingDisorderMessage'];
 //Current Treatment Center
+$inTreatmentRadio = $_POST['inTreatmentRadio'];
+$currentResidence = $_POST['currentResidence'];
 $currentFacilityName = $_POST['currentFacilityName'];
 $currentFacilityDCDate = $_POST['currentFacilityDCDate'];
 $primaryTherapistName = $_POST['primaryTherapistName'];
@@ -59,7 +42,6 @@ $primaryTherapistTelephone = $_POST['primaryTherapistName'];
 $primaryTherapistEmail = $_POST['primaryTherapistEmail'];
 //Employment and Education
 $highestEducation = $_POST['highestEducation'];
-$educationInstitution = $_POST['educationInstitution'];
 $currentlyEmployed = $_POST['currentlyEmployed'];
 $currentEmploymentMessage = $_POST['currentEmploymentMessage'];
 $vocationalSkills = $_POST['vocationalSkills'];
@@ -100,11 +82,6 @@ $emailMessage =
     <table>
     <tr><td>Full Name: $emergencyContact</td></tr>
     <tr><td>Relationship: $emergencyRelationship</td></tr>
-    <tr><td>Street Address: $emergencyStreet</td></tr>
-    <tr><td>Apt/Suite #: $emergencyApt</td></tr>
-    <tr><td>City: $emergencyCity</td></tr>
-    <tr><td>State: $emergencyState</td></tr>
-    <tr><td>Zip: $emergencyZip</td></tr>
     <tr><td>Primary Phone: $emergencyPhone</td></tr>
     <tr><td>Email: $emergencyEmail</td></tr>
     </table>
@@ -112,13 +89,9 @@ $emailMessage =
   <h3>Drug & Alcohol History</h3>
     <table>
     <tr><td>Primary Substance of Choice: $primarySubstance</td></tr>
-    <tr><td>Date Last Used: $primaryDate</td></tr>
-    <tr><td>Frequency of Use: $primaryFrequency</td></tr>
-    <tr><td>Months/Years of Use: $primaryPeriod</td></tr>
     <tr><td>Secondary Substance of Choice: $secondarySubstance</td></tr>
-    <tr><td>Date Last Used: $secondaryDate</td></tr>
-    <tr><td>Frequency of Use: $secondaryFrequency</td></tr>
-    <tr><td>Months/Years of Use: $secondaryPeriod</td></tr>
+    <tr><td>Date Last Used: $primaryDate</td></tr>
+    <tr><td>Months/Years of Use: $primaryPeriod</td></tr>
     <tr><td>Are any family members in active addiction or recovery from: $familyAddiction</td></tr>
     <tr><td>If Yes, Please Explain: $familyAddictionMessage</td></tr>
     <tr><td>Additional Information Regarding Your Drug/Alcohol Use (Optional): $abuseSummary</td></tr>
@@ -127,19 +100,10 @@ $emailMessage =
     <h3>Psych & Medical History</h3>
     <table>
     <tr><td>Allergies: $allergies</td></tr>
-    <tr><td>Currently Taking Medications: $takingMedications</td></tr>
-    <tr><td>Prescribing Physician: $prescribingPhysician</td></tr>
     <tr><td>Current Medication List: $currentMedications</td></tr>
-    <tr><td>Currently in Treatment: $inTreatment</td></tr>
-    <tr><td>Current Treatment Center: $currentFacility</td></tr>
     <tr><td>Prior Treatment Centers: $priorFacilities</td></tr>
-    <tr><td>May we contact current facility: $permissionToContactFacility</td></tr>
-    <tr><td>If not, then why: $permissionToContactExplanation</td></tr>
     <tr><td>Have you ever been treated for Psych/Mental Health Condition: $hadPsychTreatment</td></tr>
     <tr><td>If Yes, Please Provide Dates and Explain: $psychHistoryMessage</td></tr>
-    <tr><td>Height: $height</td></tr>
-    <tr><td>Weight: $weight</td></tr>
-    <tr><td>Weight Last Year: $oldWeight</td></tr>
     <tr><td>Do you believe you have an eating disorder: $haveEatingDisorder</td></tr>
     <tr><td>Have history of Binging, Purging, Laxative/Diuretic Use: $eatingDisorderHistory</td></tr>
     <tr><td>If Yes, Please Explain (Specify if active): $eatingDisorderHistoryMessage</td></tr>
@@ -149,6 +113,8 @@ $emailMessage =
     <br>
     <h3>Current Treatment Center</h3>
     <table>
+    <tr><td>Currently In Treatment: $inTreatmentRadio</td></tr>
+    <tr><td>If Not, Where Do You Currently Reside: $currentResidence</td></tr>
     <tr><td>Current Facility Name: $currentFacilityName</td></tr>
     <tr><td>Expected Discharge Date: $currentFacilityDCDate</td></tr>
     <tr><td>Primary Therapist's Name: $primaryTherapistName</td></tr>
@@ -159,7 +125,6 @@ $emailMessage =
     <h3>Education & Employment</h3>
     <table>
     <tr><td>Highest Level Of Education: $highestEducation</td></tr>
-    <tr><td>Name of Institution: $educationInstitution</td></tr>
     <tr><td>Are You Currently Employed: $currentlyEmployed</td></tr>
     <tr><td>If Yes, Please Explain (Specify if Expected to Return to Work): $currentEmploymentMessage</td></tr>
     <tr><td>List Any Vocational Skills: $vocationalSkills</td></tr>
@@ -183,7 +148,11 @@ $emailMessage =
     <tr><td>Primary Insured Relationship: $primaryInsuredRelationship</td></tr>
     </table>
     <br>";
-$result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailMessage, $headers);
+
+
+if(isset($_POST['submit'])){
+  $result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailMessage, $headers);
+}
 ?>
 
 <!DOCTYPE html>
@@ -203,7 +172,7 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailM
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">  <!--removed navbar-fixed-top -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -215,9 +184,7 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailM
           <!--     <a class="navbar-brand" href="index.html">The Lilly Pad</a>   -->
           <img class="img-responsive top-logo" src="../img/Lilly%20Pad%20logo%20v2%20300x100.png"/><a name="top"></a>
           <img class="img-responsive top-logo-mobile" src="../img/Lilly-Pad-logo-v2-240x90.png"/>
-          <!--      <a class="btn btn-lg btn-default btn-block help-button" href="#">1-800-256-1888</a>    -->
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li>
@@ -245,6 +212,9 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailM
             </li>
             <li>
               <a href="../view/application.php">Application</a>
+            </li>
+            <li>
+              <a href="../view/articles.php">Articles</a>
             </li>
             <li>
               <a href="https://lillypad.gocashbox.com/" target="_blank">Pay Online</a>
@@ -279,7 +249,7 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailM
       <div class="row">
         <div class=" row col-lg-12">
           <div class="col-lg-7">
-            <ul class="list-inline">
+            <ul class="list-inline text-center">
               <li>
                 <a href="../index.php">Home</a>
               </li>
@@ -297,7 +267,19 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailM
               </li>
               <li class="footer-menu-divider">&sdot;</li>
               <li>
+                <a href="view/articles.php">Articles</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
                 <a target="_blank" href="https://lillypad.gocashbox.com/">Pay Online</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" target="_blank">Facebook Page</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="https://plus.google.com/u/0/b/101325822073640161186/101325822073640161186/posts" target="_blank">Google+ Page</a>
               </li>
               <li class="footer-menu-divider">&sdot;</li>
               <li>
@@ -306,12 +288,20 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailM
               <li class="footer-menu-divider">&sdot;</li>
 
             </ul>
-            <p class="copyright text-muted medium">Copyright &copy; The Lilly Pad West Palm Beach, All Rights Reserved</p>
+            <p class="copyright text-muted medium text-center">Copyright &copy; The Lilly Pad West Palm Beach, All Rights Reserved</p>
           </div>
-          <div class="col-lg-5">
-            <p class="pull-right kb-footer-text">
-              <img src="../img/kb-logo-v3-75x60.png" alt="KB Software Solutions Web Design">
-              <a href="http://www.kbsoftwaresolutions.com" target="_blank">Website Development by KB Software Solutions</a>
+          <div class="col-lg-2">
+            <p class="text-center">
+              <a href="http://farronline.org">
+                <img class="img-responsive pull-right farr-logo" src="../img/farr-logo-120x71.png" target="_blank"
+                     alt="FARR Certified Halfway House"/>
+              </a>
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <p class="text-center">
+              <a href="http://www.kbsoftwaresolutions.com"><img src="../img/kb-logo-150x75.png" target="_blank" 
+                                                                alt="KB Software Solutions Web Design"/></a>
             </p>
           </div>
         </div>
@@ -321,14 +311,6 @@ $result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailM
   <script src="../js/jquery.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script>
-    $(function(){
-      $('.fadein img:gt(0)').hide();
-      setInterval(function(){
-        $('.fadein :first-child').fadeOut()
-        .next('img').fadeIn()
-        .end().appendTo('.fadein');}, 
-                  5000);
-    });
     $(function() {
       $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

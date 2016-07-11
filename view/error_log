@@ -1,0 +1,8 @@
+[24-Jan-2016 21:49:19 America/New_York] PHP Parse error:  syntax error, unexpected '>' in /home/thelillypadpb/public_html/view/upload-article.php on line 107
+[28-Jan-2016 18:05:52 America/New_York] PHP Warning:  require_once(../../php/connect.php): failed to open stream: No such file or directory in /home/thelillypadpb/public_html/view/articles.php on line 3
+[28-Jan-2016 18:05:52 America/New_York] PHP Fatal error:  require_once(): Failed opening required '../../php/connect.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thelillypadpb/public_html/view/articles.php on line 3
+[28-Jan-2016 18:23:58 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/thelillypadpb/public_html/view/articles.php on line 8
+[28-Jan-2016 18:23:58 America/New_York] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/thelillypadpb/public_html/view/articles.php on line 14
+[28-Jan-2016 18:55:28 America/New_York] PHP Fatal error:  Call to undefined function mysqli() in /home/thelillypadpb/public_html/view/upload-article.php on line 14
+[28-Jan-2016 19:05:00 America/New_York] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE), expecting ',' or ';' in /home/thelillypadpb/public_html/view/upload-article.php on line 16
+[28-Jan-2016 19:11:13 America/New_York] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/thelillypadpb/public_html/view/upload-article.php on line 21
