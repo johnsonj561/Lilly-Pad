@@ -198,6 +198,7 @@
               <a href="index.php">Home</a>
               <a href="#home-page-1">About</a>
               <a href="view/properties.php">Properties</a>
+<<<<<<< HEAD
               <a href="view/saint-augustine.php">St Augustine</a>
               <a href="view/application.php">Application</a>
             </div>
@@ -206,8 +207,38 @@
               <a target="_blank" href="https://lillypad.gocashbox.com/">Pay Online</a>
               <a href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" target="_blank">Facebook Page</a>
               <a href="https://plus.google.com/u/0/b/101325822073640161186/101325822073640161186/posts" target="_blank">Google+ Page</a>
+=======
+              <a href="view/application.php">Application</a>
+>>>>>>> eb3b5dce902e95eed32d1560862ab11fa790de91
+            </div>
+            <div class="col-sm-6 text-center">
+              <a href="view/articles.php">Articles</a>
+              <a target="_blank" href="https://lillypad.gocashbox.com/">Pay Online</a>
+              <a href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" target="_blank">Facebook Page</a>
+              <a href="https://plus.google.com/u/0/b/101325822073640161186/101325822073640161186/posts" target="_blank">Google+ Page</a>
             </div>
           </div>
+          <div class="col-sm-3 farr-menu">
+            <h3 class="text-center">FARR Certified</h3>
+            <div class="row">
+              <a href="http://farronline.org">
+                <img class="img-responsive img-center" src="img/farr-logo-120x71.png" target="_blank"
+                     alt="FARR Certified Halfway House"/>
+              </a>
+            </div>
+            <div class="text-center row">
+              <a href="http://farronline.org/standards-ethics/ethics/code-of-ethics-2/" target="_blank">Code Of Ethics</a>
+              <a href="http://farronline.org/standards-ethics/ethics/file-a-grievance-2/" target="_blank">Greivance Procedure</a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <h3 class="text-center">Powered By</h3>
+            <p class="text-center">
+              <a href="http://www.kbsoftwaresolutions.com"><img src="img/kb-logo-150x75.png" target="_blank" 
+                                                                alt="KB Software Solutions Web Design"/></a>
+            </p>
+          </div>
+<<<<<<< HEAD
           <div class="col-sm-3 farr-menu">
             <h3 class="text-center">FARR Certified</h3>
             <div class="row">
@@ -250,4 +281,28 @@
 <script src="js/jquery.js"></script>
 <script src="js/lilly-pad.min.js"></script>
 </body>
+=======
+          <div class="col-sm-1"></div>
+        </div>
+      </div>
+      <div class="row col-lg-12 footer-bottom-row">
+        <div class="col-md-4 text-center">
+          <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+15617581011" class="footer-call-now">Call Today 561-758-1011</a>
+        </div>
+        <div class="col-md-4 text-center">
+          <p class="copyright text-muted medium text-center">&copy; The Lilly Pad West Palm Beach</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" target="_blank">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i></a></span>
+          <a href="https://plus.google.com/u/0/b/101325822073640161186/101325822073640161186/posts" target="_blank">
+            <i class="fa fa-google-plus-square" aria-hidden="true"></i></a></span>
+          <a href="view/contact.php"><i class="fa fa-envelope" aria-hidden="true"></i></a></span>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/lilly-pad.min.js"></script>
+  </body>
+>>>>>>> eb3b5dce902e95eed32d1560862ab11fa790de91
 </html>
