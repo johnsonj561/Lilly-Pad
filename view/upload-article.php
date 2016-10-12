@@ -56,7 +56,7 @@ if(isset($_POST['upload'])){
             ('$date', '$subject', '$author', '$article', '$targetPath');";
   $result = mysqli_query($link, $query) or die(mysqli_error($link));
   if($result){
-    echo "<meta http-equiv='refresh' content='1; articles.php'>";
+    echo "<meta http-equiv='refresh' content='1; testimonials.php'>";
   }
   mysqli_close($link);
 }
