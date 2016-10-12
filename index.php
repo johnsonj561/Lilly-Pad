@@ -25,10 +25,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <img class="img-responsive top-logo" src="img/Lilly%20Pad%20logo%20v2%20300x100.png"
+          <a href="index.php"><img class="img-responsive top-logo" src="img/Lilly%20Pad%20logo%20v2%20300x100.png"
                alt="Lilly Pad WomensHalfway House Logo"/><a name="top"></a>
-          <img class="img-responsive top-logo-mobile" src="img/Lilly-Pad-logo-v2-240x90.png"
-               alt="Lilly Pad Womens Halfway House"/>
+          <a href="index.php"><img class="img-responsive top-logo-mobile" src="img/Lilly-Pad-logo-v2-240x90.png"
+               alt="Lilly Pad Womens Halfway House"/></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
@@ -62,7 +62,7 @@
               <a href="view/application.php">Application</a>
             </li>
             <li>
-              <a href="view/articles.php">Articles</a>
+              <a href="view/testimonials.php">Testimonials</a>
             </li>
             <li>
               <a href="https://lillypad.gocashbox.com/" target="_blank">Pay Online</a>
@@ -144,8 +144,7 @@
         </div>
       </div>
       <div class="row home-page-1">
-        <div class="col-md-1"></div>
-        <div class="col-md-5 col-sm-6 hero-feature">
+        <div class="col-md-4 col-sm-6 hero-feature">
           <div class="thumbnail">
             <img  class="about-img" src="img/women-case-management-500x300.jpg" alt="Case Management Services">
             <div class="caption">
@@ -155,11 +154,10 @@
                 intensive outpatient treatment and the Lilly Pad; conduct family sessions via phone or in person; link client to community 
                 resources such as mental health appointments, food-stamps, vocational training, resume work-shops, insurance networking; assist 
                 with budgeting and time management. Medication compliance is another very important part of this program too.
-                <a href="view/contact.php">Contact us</a> for more information.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-5 col-sm-6 hero-feature">
+        <div class="col-md-4 col-sm-6 hero-feature">
           <div class="thumbnail">
             <img class="about-img" src="img/sober-companion-500x300.jpg" alt="Sober Companionship Services">
             <div class="caption">
@@ -172,7 +170,28 @@
             </div>
           </div>
         </div>
-        <div class="col-md-1"></div>
+
+        <!-- NEW SLOT FOR TESTIMONIALS -->
+        <div class="col-md-4 col-sm-6 hero-feature">
+          <div class="thumbnail">
+            <img class="about-img" src="img/alumni-shares-testimonial-500x300.jpg" alt="Read Alumni Testimonials">
+            <div class="caption">
+              <h1 class="thumbnail-title text-center">Our Testimonials</h1>
+              <p class="image-description">"I had just turned 18 when I went to Lilly Pad. I was on my own for the first time and scared.
+                Without their help I don't know where I'd be today. They gave me a safe place to live and showed me the tools I needed to
+                stay sober. I can't even begin to describe the love that I felt when I lived there. I felt like my recovery was their top
+                priority and am forever grateful to the staff. Today I am a confident, sober woman. Thank you Lilly Pad!" 
+              </p>
+              <p class="testimonial-signature">~AB, Sober Since 01.26.14</p>
+              <p class="text-center">
+                <a href='view/testimonials.php'>
+                  <button class='btn btn-primary testimonial-btn'>Read More Testimonials</button>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
       <p class="to-top pull-left"><a href="#top">Back To Top</a></p>
       <div class="col-lg-12 social-media-row">
@@ -198,18 +217,8 @@
               <a href="index.php">Home</a>
               <a href="#home-page-1">About</a>
               <a href="view/properties.php">Properties</a>
-<<<<<<< HEAD
               <a href="view/saint-augustine.php">St Augustine</a>
-              <a href="view/application.php">Application</a>
-            </div>
-            <div class="col-sm-6 text-center">
-              <a href="view/articles.php">Articles</a>
-              <a target="_blank" href="https://lillypad.gocashbox.com/">Pay Online</a>
-              <a href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" target="_blank">Facebook Page</a>
-              <a href="https://plus.google.com/u/0/b/101325822073640161186/101325822073640161186/posts" target="_blank">Google+ Page</a>
-=======
-              <a href="view/application.php">Application</a>
->>>>>>> eb3b5dce902e95eed32d1560862ab11fa790de91
+              <a href="view/testimonials.php">Testimonials</a>
             </div>
             <div class="col-sm-6 text-center">
               <a href="view/articles.php">Articles</a>
@@ -218,27 +227,6 @@
               <a href="https://plus.google.com/u/0/b/101325822073640161186/101325822073640161186/posts" target="_blank">Google+ Page</a>
             </div>
           </div>
-          <div class="col-sm-3 farr-menu">
-            <h3 class="text-center">FARR Certified</h3>
-            <div class="row">
-              <a href="http://farronline.org">
-                <img class="img-responsive img-center" src="img/farr-logo-120x71.png" target="_blank"
-                     alt="FARR Certified Halfway House"/>
-              </a>
-            </div>
-            <div class="text-center row">
-              <a href="http://farronline.org/standards-ethics/ethics/code-of-ethics-2/" target="_blank">Code Of Ethics</a>
-              <a href="http://farronline.org/standards-ethics/ethics/file-a-grievance-2/" target="_blank">Greivance Procedure</a>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <h3 class="text-center">Powered By</h3>
-            <p class="text-center">
-              <a href="http://www.kbsoftwaresolutions.com"><img src="img/kb-logo-150x75.png" target="_blank" 
-                                                                alt="KB Software Solutions Web Design"/></a>
-            </p>
-          </div>
-<<<<<<< HEAD
           <div class="col-sm-3 farr-menu">
             <h3 class="text-center">FARR Certified</h3>
             <div class="row">
@@ -281,28 +269,4 @@
 <script src="js/jquery.js"></script>
 <script src="js/lilly-pad.min.js"></script>
 </body>
-=======
-          <div class="col-sm-1"></div>
-        </div>
-      </div>
-      <div class="row col-lg-12 footer-bottom-row">
-        <div class="col-md-4 text-center">
-          <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+15617581011" class="footer-call-now">Call Today 561-758-1011</a>
-        </div>
-        <div class="col-md-4 text-center">
-          <p class="copyright text-muted medium text-center">&copy; The Lilly Pad West Palm Beach</p>
-        </div>
-        <div class="col-md-4 text-center">
-          <a href="https://www.facebook.com/The-Lilly-Pad-Palm-Beach-300926496715593/?fref=ts" target="_blank">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i></a></span>
-          <a href="https://plus.google.com/u/0/b/101325822073640161186/101325822073640161186/posts" target="_blank">
-            <i class="fa fa-google-plus-square" aria-hidden="true"></i></a></span>
-          <a href="view/contact.php"><i class="fa fa-envelope" aria-hidden="true"></i></a></span>
-        </div>
-      </div>
-    </footer>
-    <script src="js/jquery.js"></script>
-    <script src="js/lilly-pad.min.js"></script>
-  </body>
->>>>>>> eb3b5dce902e95eed32d1560862ab11fa790de91
 </html>
