@@ -19,7 +19,7 @@
     <div class="container">
       <div class="row contact">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Executive - Premiere Housing</h2>
+          <h2 class="section-heading">St Augustine Executive Housing</h2>
           <div class="col-lg-2"></div>
           <div class="col-lg-8">
             <div id="carousel-example-generic" class="carousel slide">
@@ -31,45 +31,35 @@
                 <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="5"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="7"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="8"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="9"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="10"></li>
               </ol>
               <div class="carousel-inner">
+                <div class="item">
+                  <img class="img-responsive img-full" src="../img/executive/executive-sober-house-living-room-2-1000x500.jpg" 
+                       alt="Executive sober living home in St Augustine">
+                </div>
                 <div class="item active">
-                  <img class="img-responsive img-full" src="../img/executive/executive-1-1000x500.jpg" alt="Executive Halfway House - Dining Area">
+                  <img class="img-responsive img-full" src="../img/executive/executive-sober-house-bedroom-3-1000x500.jpg" 
+                       alt="Sober living home for women in St Augustine">
                 </div>
                 <div class="item">
-                  <img class="img-responsive img-full" src="../img/executive/executive-2-1000x500.jpg" alt="Executive Sober Living - Living Room">
+                  <img class="img-responsive img-full" src="../img/executive/executive-sober-house-dining-room-1000x500.jpg" 
+                       alt="Dining room in St Augustine women's halfway house">
                 </div>
                 <div class="item">
-                  <img class="img-responsive img-full" src="../img/executive/executive-3-1000x500.jpg" alt="Executive Clean and Sober - Living Room">
+                  <img class="img-responsive img-full" src="../img/executive/executive-sober-house-bedroom-1-1000x500.jpg" 
+                       alt="Comfortable bedroom in Florida Halfway House for women">
                 </div>
                 <div class="item">
-                  <img class="img-responsive img-full" src="../img/executive/executive-4-1000x500.jpg" alt="Executive Women's Halfway - Living Room">
+                  <img class="img-responsive img-full" src="../img/executive/executive-sober-house-bedroom-2-1000x500.jpg" 
+                       alt="Comfortable housing for women in sobriety">
                 </div>
                 <div class="item">
-                  <img class="img-responsive img-full" src="../img/executive/executive-5-1000x500.jpg" alt="Executive Sober House - Study Room">
+                  <img class="img-responsive img-full" src="../img/executive/executive-sober-house-kitchen-1000x500.jpg" 
+                       alt="Fully equipped kitchen in Florida Halfway House">
                 </div>
                 <div class="item">
-                  <img class="img-responsive img-full" src="../img/executive/executive-6-1000x500.jpg" alt="Executive Halfway House - Dining Area">
-                </div>
-                <div class="item">
-                  <img class="img-responsive img-full" src="../img/executive/executive-7-1000x500.jpg" alt="Executive Halfway House - Kitchen">
-                </div>
-                <div class="item">
-                  <img class="img-responsive img-full" src="../img/executive/executive-bathroom-1000x500.jpg" alt="Executive Sober Living - Bathroom">
-                </div>
-                <div class="item">
-                  <img class="img-responsive img-full" src="../img/executive/executive-bedroom-1000x500.jpg" alt="Executive Halfway house - Bedroom">
-                </div>
-                <div class="item">
-                  <img class="img-responsive img-full" src="../img/executive/executive-bedroom-2-1000x500.jpg" alt="Executive Women's Sober Living -
-                                                                                                                    Bedroom">
-                </div>
-                <div class="item">
-                  <img class="img-responsive img-full" src="../img/executive/executive-pool-1000x500.jpg" alt="Executive Halfway House - Pool">
+                  <img class="img-responsive img-full" src="../img/executive/executive-sober-house-living-room-1000x500.jpg" 
+                       alt="Community Living Area in Women's Recovery Home">
                 </div>
               </div>
             </div>
@@ -77,6 +67,22 @@
           <div class="col-lg-2"></div>
         </div>
       </div>
+      
+      
+
+        <!-- Call to Action Section -->
+        <div class="well st-augustine-well">
+          <div class="row">
+            <div class="col-md-8">
+              <p class="text-center st-augustine-well-text">Interested in learning more about our St Augustine Executive Housing?</p>
+            </div>
+            <div class="col-md-4">
+              <a class="btn btn-lg btn-default btn-block" href="http://www.thelillypadofsaintaugustine.com">Visit St Augustine</a>
+            </div>
+          </div>
+        </div>
+      
+      
     </div> 
     <?php 
 require_once('../templates/social-footer.html');

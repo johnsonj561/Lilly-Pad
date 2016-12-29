@@ -47,31 +47,17 @@
       <div class="row"><a name="executive"></a>
         <div class="col-md-7">
           <a href="executive.php">
-            <img class="img-responsive img-hover about-img" src="../img/executive-cover-700x400.jpg" alt="Premium Executive Sober House for Women
-                                                                                                          In Recovery">
+            <img class="img-responsive img-hover about-img" src="/img/executive/executive-sober-house-living-room-700x400.jpg" 
+                 alt="Premium Executive Sober House for Women Recovering From Addiction">
           </a>
         </div>
         <div class="col-md-5">
           <h1 class="thumbnail-title">Executive Housing</h1>
-          <p>Walking distance from the Intracoastal and in close proximity to the beaches, the upscale executive housing is adorn with 
-            a recreational swimming pool, formal living and dining rooms, as well as a private bathroom attached to each bedroom. Just 
-            off Flagler Drive, the location of the executive house is nearby all of downtown Palm Beach.</p>
+          <p>We offer improved accomodations for our women in St. Augustine, Florida. Our executive program comes fully eqiupped with
+          holistic treatment options - acupuncture &amp; massage, equine therapy, and scheduled outdoor activities. The executive housing, located in a scenic
+          environment, provides comfortable living to our women in early recovery. </p>
           <a class="btn btn-primary" href="executive.php">View Images</a>
-        </div>
-      </div>
-      <hr>
-      <div class="row"><a name="step-down"></a>
-        <div class="col-md-7">
-          <a href="step-down.php">
-            <img class="img-responsive img-hover about-img" src="../img/stepdown-cover-700x400.jpg" alt="Step Down - 3 Quarter Living for Women in Sobriety">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h1 class="thumbnail-title">Step Down Housing</h1>
-          <p>For the women who have completed their 90-day commitment at Lilly Pad’s main or executive house, the step down housing provides
-            independence and personal accountability as they progress in their recovery. In the family-oriented suburb of Flamingo Park, 
-            the residents will be able to experience and enjoy their newly achieved sobriety.</p>
-          <a class="btn btn-primary" href="step-down.php">View Images</a>
+          <a class="btn btn-primary" target="_blank" href="http://www.thelillypadofsaintaugustine.com">Visit Website</a>
         </div>
       </div>
       <p class="to-top pull-left"><a href="#top">Back To Top</a></p>
