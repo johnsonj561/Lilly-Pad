@@ -33,7 +33,7 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">   
               <li class="mobile-only">
-                <a href="services-offerred.php">Services</a>
+                <a href="view/services-offerred.php">Services</a>
               </li>
               <li class="dropdown">
                 <a href="view/services-offerred.php" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>

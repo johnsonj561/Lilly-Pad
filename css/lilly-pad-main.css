@@ -8442,7 +8442,10 @@ footer h3 {
 
 .services-quote {
   margin: 35px 0px;
-  color: #888
+  color: black;
+  border: 1px solid #a5d93f;
+  border-radius: 25px;
+  padding: 20px;
 }
 
 .services-section{
@@ -8451,6 +8454,7 @@ footer h3 {
 
 .services-title{
   margin-bottom: 25px;
+  color: black;
 }
 
 .st-augustine-well{
@@ -8460,4 +8464,22 @@ footer h3 {
 
 .st-augustine-well-text{
   margin-top:10px;
+}
+
+.services-section > ul { 
+  padding-left:20px; 
+  list-style: none;
+}
+.services-section > ul > li{
+  margin-bottom: 5px;
+}
+.services-section > ul > li:before {    
+  list-style-type: none;
+  font-family: 'FontAwesome';
+  content: '\f00c';
+  margin: 0 5px 0 -15px;
+  color: #F6508F;
+}
+.services-section > ul > li > span{
+  color: black;
 }
