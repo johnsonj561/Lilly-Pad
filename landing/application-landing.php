@@ -1,70 +1,71 @@
 <?php
-//Basic Information
-$fullName = $_POST['fullName'];
-$dob = $_POST['dob'];
-$street = $_POST['street'];
-$apt = $_POST['apt'];
-$city = $_POST['city'];
-$state = $_POST['state'];
-$zip = $_POST['zip'];
-$clientPhone = $_POST['clientPhone'];
-$clientEmail = $_POST['clientEmail'];
-//Emergency Contact
-$emergencyContact = $_POST['emergencyContact'];
-$emergencyRelationship = $_POST['emergencyRelationship'];
-$emergencyPhone = $_POST['emergencyPhone'];
-$emergencyEmail = $_POST['emergencyEmail'];
-//Drug/Alcohol History
-$primarySubstance = $_POST['primarySubstance'];
-$primaryDate = $_POST['primaryDate'];
-$primaryPeriod = $_POST['primaryPeriod'];
-$secondarySubstance = $_POST['secondarySubstance'];
-$familyAddiction = $_POST['familyAddiction'];
-$familyAddictionMessage = $_POST['familyAddictionMessage'];
-//Psych and Medical History
-$allergies = $_POST['allergies'];
-$currentMedications = $_POST['currentMedicationList'];
-$priorFacilities = $_POST['priorFacilityList'];
-$hadPsychTreatment = $_POST['hadPsychTreatment'];
-$psychHistoryMessage = $_POST['psychHistoryMessage'];
-$haveEatingDisorder = $_POST['haveEatingDisorder'];
-$eatingDisorderHistory = $_POST['eatingDisorderHistory'];
-$eatingDisorderHistoryMessage = $_POST['eatingDisorderHistoryMessage'];
-$treatedEatingDisorder = $_POST['treatedEatingDisorder'];
-$treatedEatingDisorderMessage = $_POST['treatedEatingDisorderMessage'];
-//Current Treatment Center
-$inTreatmentRadio = $_POST['inTreatmentRadio'];
-$currentResidence = $_POST['currentResidence'];
-$currentFacilityName = $_POST['currentFacilityName'];
-$currentFacilityDCDate = $_POST['currentFacilityDCDate'];
-$primaryTherapistName = $_POST['primaryTherapistName'];
-$primaryTherapistTelephone = $_POST['primaryTherapistName'];
-$primaryTherapistEmail = $_POST['primaryTherapistEmail'];
-//Employment and Education
-$highestEducation = $_POST['highestEducation'];
-$currentlyEmployed = $_POST['currentlyEmployed'];
-$currentEmploymentMessage = $_POST['currentEmploymentMessage'];
-$vocationalSkills = $_POST['vocationalSkills'];
-//Legalities
-$pastLegalIssues = $_POST['pastLegalIssues'];
-$pastLegalMessage = $_POST['pastLegalMessage'];
-$currentLegalIssues = $_POST['currentLegalIssues'];
-$currentLegalMessage = $_POST['currentLegalMessage'];
-//insurance information
-$insuranceProvider = $_POST['insuranceProvider'];
-$insuranceTelephone = $_POST['insuranceTelephone'];
-$insuranceID = $_POST['insuranceID'];
-$insuranceGroup = $_POST['insuranceGroup'];
-$primaryInsured = $_POST['primaryInsured'];
-$primaryInsuredRelationship = $_POST['primaryInsuredRelationship'];
+if(isset($_POST['submit'])){
+  //Basic Information
+  $fullName = $_POST['fullName'];
+  $dob = $_POST['dob'];
+  $street = $_POST['street'];
+  $apt = $_POST['apt'];
+  $city = $_POST['city'];
+  $state = $_POST['state'];
+  $zip = $_POST['zip'];
+  $clientPhone = $_POST['clientPhone'];
+  $clientEmail = $_POST['clientEmail'];
+  //Emergency Contact
+  $emergencyContact = $_POST['emergencyContact'];
+  $emergencyRelationship = $_POST['emergencyRelationship'];
+  $emergencyPhone = $_POST['emergencyPhone'];
+  $emergencyEmail = $_POST['emergencyEmail'];
+  //Drug/Alcohol History
+  $primarySubstance = $_POST['primarySubstance'];
+  $primaryDate = $_POST['primaryDate'];
+  $primaryPeriod = $_POST['primaryPeriod'];
+  $secondarySubstance = $_POST['secondarySubstance'];
+  $familyAddiction = $_POST['familyAddiction'];
+  $familyAddictionMessage = $_POST['familyAddictionMessage'];
+  //Psych and Medical History
+  $allergies = $_POST['allergies'];
+  $currentMedications = $_POST['currentMedicationList'];
+  $priorFacilities = $_POST['priorFacilityList'];
+  $hadPsychTreatment = $_POST['hadPsychTreatment'];
+  $psychHistoryMessage = $_POST['psychHistoryMessage'];
+  $haveEatingDisorder = $_POST['haveEatingDisorder'];
+  $eatingDisorderHistory = $_POST['eatingDisorderHistory'];
+  $eatingDisorderHistoryMessage = $_POST['eatingDisorderHistoryMessage'];
+  $treatedEatingDisorder = $_POST['treatedEatingDisorder'];
+  $treatedEatingDisorderMessage = $_POST['treatedEatingDisorderMessage'];
+  //Current Treatment Center
+  $inTreatmentRadio = $_POST['inTreatmentRadio'];
+  $currentResidence = $_POST['currentResidence'];
+  $currentFacilityName = $_POST['currentFacilityName'];
+  $currentFacilityDCDate = $_POST['currentFacilityDCDate'];
+  $primaryTherapistName = $_POST['primaryTherapistName'];
+  $primaryTherapistTelephone = $_POST['primaryTherapistName'];
+  $primaryTherapistEmail = $_POST['primaryTherapistEmail'];
+  //Employment and Education
+  $highestEducation = $_POST['highestEducation'];
+  $currentlyEmployed = $_POST['currentlyEmployed'];
+  $currentEmploymentMessage = $_POST['currentEmploymentMessage'];
+  $vocationalSkills = $_POST['vocationalSkills'];
+  //Legalities
+  $pastLegalIssues = $_POST['pastLegalIssues'];
+  $pastLegalMessage = $_POST['pastLegalMessage'];
+  $currentLegalIssues = $_POST['currentLegalIssues'];
+  $currentLegalMessage = $_POST['currentLegalMessage'];
+  //insurance information
+  $insuranceProvider = $_POST['insuranceProvider'];
+  $insuranceTelephone = $_POST['insuranceTelephone'];
+  $insuranceID = $_POST['insuranceID'];
+  $insuranceGroup = $_POST['insuranceGroup'];
+  $primaryInsured = $_POST['primaryInsured'];
+  $primaryInsuredRelationship = $_POST['primaryInsuredRelationship'];
 
 
-$headers = "From: www.wpblillypad.com\r\n";
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+  $headers = "From: www.thelillypadpb.com\r\n";
+  $headers .= "MIME-Version: 1.0\r\n";
+  $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-$emailMessage = 
-  "<h2>Lilly Pad Housing Application</h2>
+  $emailMessage = 
+    "<h2>Lilly Pad Housing Application</h2>
     <h3>Basic Information</h3>
     <table>
     <tr><td>Full Name: $fullName</td></tr>
@@ -148,10 +149,7 @@ $emailMessage =
     <tr><td>Primary Insured Relationship: $primaryInsuredRelationship</td></tr>
     </table>
     <br>";
-
-
-if(isset($_POST['submit'])){
-  $result = mail("sivia@thelillypad.org", "Lilly Pad Housing Application", $emailMessage, $headers);
+  $result = mail("jjohnson@ambrosiatc.com,allysonm@me.com,allyson@thelillypad.org", "Lilly Pad WPB Housing Application", $emailMessage, $headers);
 }
 ?>
 

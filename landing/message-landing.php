@@ -4,7 +4,7 @@ if(isset($_POST['submit'])){
   $email = strip_tags($_POST['email']);
   $phoneNumber = strip_tags($_POST['phone']);
   $message = strip_tags($_POST['message']);
-  $headers = "From: www.wpblillypad.com\r\n";
+  $headers = "From: www.thelillypadpb.com\r\n";
   $headers .= "MIME-Version: 1.0\r\n";
   $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
   $emailMessage = 
@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
         <td>Email: $email</td>
       </tr>
     </table>";
-  $result = mail("sivia@thelillypad.org", "Lilly Pad Messaging Center", $emailMessage, $headers);
+  $result = mail("jjohnson@ambrosiatc.com,allysonm@me.com,allyson@thelillypad.org", "Lilly Pad Messaging Center", $emailMessage, $headers);
 }
 
 ?>

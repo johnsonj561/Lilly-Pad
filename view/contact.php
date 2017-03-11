@@ -66,7 +66,7 @@
                     <a href="tel:+15617581011" class="contact-link">561-758-1011</a>
                   </p>
                   <p><strong>Phone 2: </strong>
-                    <a href="tel:14407422809" class="contact-link">440-742-2809</a>
+                    <a href="tel:15618899290" class="contact-link">561-889-9290</a>
                   </p>
                   <p><strong>Location:</strong> 
                     <a class="contact-link" target="_blank"
